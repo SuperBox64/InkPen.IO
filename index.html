@@ -321,7 +321,7 @@
                             <td>
                                 <div class="hash-cell">
                                     <span id="sha256-hash">6e9e7ee5e598c9e558f595f791f69cb5f8e4fe555980a66bdbf9586b1f0b82ad</span>
-                                    <button onclick="navigator.clipboard.writeText('6e9e7ee5e598c9e558f595f791f69cb5f8e4fe555980a66bdbf9586b1f0b82ad').then(() => { this.innerHTML = '✓'; setTimeout(() => this.innerHTML = '⧉', 2000); })" style="padding: 4px 12px; background: #000; color: #fff; border: none; border-radius: 4px; cursor: pointer; font-size: 1rem; flex-shrink: 0; min-width: 40px;">⧉</button>
+                                    <button onclick="navigator.clipboard.writeText('6e9e7ee5e598c9e558f595f791f69cb5f8e4fe555980a66bdbf9586b1f0b82ad').then(() => { this.style.fontSize = '0.8rem'; this.innerHTML = '✓'; setTimeout(() => { this.style.fontSize = '1rem'; this.innerHTML = '⧉'; }, 2000); })" style="padding: 4px 12px; background: #000; color: #fff; border: none; border-radius: 20px; cursor: pointer; font-size: 1rem; flex-shrink: 0; min-width: 40px; height: 28px; display: flex; align-items: center; justify-content: center;">⧉</button>
                                 </div>
                             </td>
                         </tr>
@@ -331,8 +331,8 @@
         </div>
     </section>
 
-    <footer style="background-color: #000; color: #fff; padding: 30px 0 50px 0; width: 100%; border-top-left-radius: 20px; border-top-right-radius: 20px; margin-bottom: -20px; position: relative;">
-        <div class="container">
+    <footer style="background-color: #000; color: #fff; padding: 44px 0 56px 0; width: 100%; border-top-left-radius: 30px; border-top-right-radius: 30px; margin-bottom: -20px; position: relative; display: flex; align-items: center; min-height: 120px;">
+        <div class="container" style="width: 100%;">
             <div style="font-family: 'Courier New', Courier, monospace; display: flex; justify-content: space-evenly; width: 100%;">
                 <div>Todd Bruss</div>
                 <div>Lead Technologist</div>
