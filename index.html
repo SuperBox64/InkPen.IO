@@ -33,6 +33,7 @@
             line-height: 1.6;
             overflow-x: hidden;
             font-weight: 300;
+            margin-bottom: -10px;
         }
 
         .container {
@@ -316,7 +317,7 @@
                             <td>
                                 <div class="hash-cell">
                                     <span id="sha256-hash">6e9e7ee5e598c9e558f595f791f69cb5f8e4fe555980a66bdbf9586b1f0b82ad</span>
-                                    <button onclick="navigator.clipboard.writeText('6e9e7ee5e598c9e558f595f791f69cb5f8e4fe555980a66bdbf9586b1f0b82ad').then(() => { this.innerHTML = '✓'; setTimeout(() => this.innerHTML = '⧉', 2000); })" style="padding: 4px 8px; background: #000; color: #fff; border: none; border-radius: 4px; cursor: pointer; font-size: 1rem; flex-shrink: 0;">⧉</button>
+                                    <button onclick="navigator.clipboard.writeText('6e9e7ee5e598c9e558f595f791f69cb5f8e4fe555980a66bdbf9586b1f0b82ad').then(() => { this.innerHTML = '✓'; setTimeout(() => this.innerHTML = '⧉', 2000); })" style="padding: 4px 12px; background: #000; color: #fff; border: none; border-radius: 4px; cursor: pointer; font-size: 1rem; flex-shrink: 0; min-width: 40px;">⧉</button>
                                 </div>
                             </td>
                         </tr>
@@ -326,12 +327,13 @@
         </div>
     </section>
 
-    <footer style="background-color: #000; color: #fff; padding: 30px 0; width: 100%;">
+    <footer style="background-color: #000; color: #fff; padding: 30px 0 40px 0; width: 100%; border-top-left-radius: 20px; border-top-right-radius: 20px; margin-bottom: -10px;">
         <div class="container">
-            <div style="font-family: 'Courier New', Courier, monospace; display: flex; justify-content: space-between; width: 100%;">
-                <div style="text-align: left; flex: 1;">Todd Bruss: Lead Technologist</div>
-                <div style="text-align: center; flex: 1;">Inventor</div>
-                <div style="text-align: right; flex: 1;">Research and Development</div>
+            <div style="font-family: 'Courier New', Courier, monospace; display: flex; justify-content: space-evenly; width: 100%;">
+                <div>Todd Bruss</div>
+                <div>Lead Technologist</div>
+                <div>Inventor</div>
+                <div>Research and Development</div>
             </div>
         </div>
     </footer>
