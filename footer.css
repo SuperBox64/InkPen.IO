@@ -24,13 +24,27 @@ footer .footer-content {
     font-family: 'Courier New', Courier, monospace;
     display: flex;
     justify-content: space-between;
-    max-width: 900px;
+    width: 100%;
+    max-width: none;
     margin: 0 auto;
     font-size: 1rem;  /* This is the actual size from the main page */
 }
 
 footer .footer-content div {
     color: #fff;
+    flex: 1;
+}
+
+footer .footer-content div:first-child {
+    text-align: left;
+}
+
+footer .footer-content div:nth-child(2) {
+    text-align: center;
+}
+
+footer .footer-content div:last-child {
+    text-align: right;
 }
 
 footer .footer-content a {
