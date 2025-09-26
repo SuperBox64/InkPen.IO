@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>File Formats - Logos InkPen Help</title>
+    <meta name="description" content="Complete guide to InkPen, PDF, and SVG file formats">
+    <meta name="keywords" content="inkpen, pdf, svg, save, export, formats, AutoCAD, Apple icons">
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="content">
+        <h1>File Formats</h1>
+
+        <p>Logos InkPen supports three primary formats for saving, plus specialized export options for specific workflows.</p>
+
+        <h2>Native InkPen Format (.inkpen)</h2>
+
+        <h3>About InkPen Files</h3>
+        <p><strong>The native Logos InkPen format preserves all editing capabilities.</strong></p>
+        <ul>
+            <li>Maintains all layers and layer properties</li>
+            <li>Preserves object names and organization</li>
+            <li>Keeps gradients fully editable</li>
+            <li>Retains text as editable (not outlined)</li>
+            <li>Stores undo history within session</li>
+            <li>Embeds or links images</li>
+            <li>Smallest file size for complex documents</li>
+        </ul>
+
+        <h3>Saving as InkPen</h3>
+        <h4>Save (⌘S)</h4>
+        <ol class="step-list">
+            <li>Creates or updates .inkpen file</li>
+            <li>Maintains current filename and location</li>
+            <li>Automatic backup before save</li>
+            <li>Updates document icon in Finder</li>
+        </ol>
+
+        <h4>Save As (⌘⇧S)</h4>
+        <ol class="step-list">
+            <li>Choose "Ink Pen Document" from format dropdown</li>
+            <li>Enter new filename (extension added automatically)</li>
+            <li>Select save location</li>
+            <li>Original document remains unchanged</li>
+            <li>New document becomes active</li>
+        </ol>
+
+        <h3>InkPen File Structure</h3>
+        <ul>
+            <li>JSON-based format for readability</li>
+            <li>Compressed for smaller file size</li>
+            <li>Version tagged for compatibility</li>
+            <li>Can be opened in text editor for debugging</li>
+        </ul>
+
+        <h3>When to Use InkPen Format</h3>
+        <ul>
+            <li><strong>Always</strong> for work in progress</li>
+            <li>When you need to edit later</li>
+            <li>For template documents</li>
+            <li>Archiving original artwork</li>
+            <li>Sharing with other InkPen users</li>
+        </ul>
+
+        <h2>PDF Format (.pdf)</h2>
+
+        <h3>About PDF Files</h3>
+        <p><strong>Industry standard for print and document exchange.</strong></p>
+        <ul>
+            <li>Vector graphics remain scalable</li>
+            <li>Text converted to outlines</li>
+            <li>Universal compatibility</li>
+            <li>Print-ready output</li>
+            <li>Preserves exact appearance</li>
+            <li>Can include compression</li>
+        </ul>
+
+        <h3>Saving as PDF</h3>
+        <h4>Save As PDF (File > Save As)</h4>
+        <ol class="step-list">
+            <li>Choose "PDF Document" from format dropdown</li>
+            <li>Name your file</li>
+            <li>PDF settings applied automatically</li>
+            <li>Creates print-ready PDF</li>
+        </ol>
+
+        <h4>Export as PDF (⌘⇧E)</h4>
+        <ol class="step-list">
+            <li>Choose File > Export PDF</li>
+            <li>Select PDF preset:
+                <ul>
+                    <li><strong>High Quality Print:</strong> 300 DPI, compressed</li>
+                    <li><strong>Press Quality:</strong> Maximum quality, no compression</li>
+                    <li><strong>Smallest File Size:</strong> For email/web</li>
+                </ul>
+            </li>
+            <li>Configure options:
+                <ul>
+                    <li>Preserve Illustrator Editing Capabilities</li>
+                    <li>Embed Page Thumbnails</li>
+                    <li>Optimize for Fast Web View</li>
+                </ul>
+            </li>
+            <li>Click Export</li>
+        </ol>
+
+        <h3>PDF Color Settings</h3>
+        <ul>
+            <li><strong>RGB:</strong> Screen viewing, digital distribution</li>
+            <li><strong>CMYK:</strong> Professional printing</li>
+            <li><strong>Grayscale:</strong> Black and white printing</li>
+            <li><strong>Preserve Numbers:</strong> Don't convert colors</li>
+        </ul>
+
+        <h3>When to Use PDF</h3>
+        <ul>
+            <li>Sending to print shops</li>
+            <li>Client presentations</li>
+            <li>Document archival</li>
+            <li>Cross-platform sharing</li>
+            <li>Legal documents</li>
+        </ul>
+
+        <h2>SVG Format (.svg)</h2>
+
+        <h3>About SVG Files</h3>
+        <p><strong>Scalable Vector Graphics for web and modern applications.</strong></p>
+        <ul>
+            <li>XML-based vector format</li>
+            <li>Infinitely scalable</li>
+            <li>Editable in code editors</li>
+            <li>Supports CSS styling</li>
+            <li>Can include JavaScript</li>
+            <li>Small file sizes</li>
+            <li>Browser compatible</li>
+        </ul>
+
+        <h3>Saving as SVG</h3>
+        <h4>Save As SVG (File > Save As)</h4>
+        <ol class="step-list">
+            <li>Choose "SVG Document" from format dropdown</li>
+            <li>Enter filename</li>
+            <li>Standard web SVG created</li>
+            <li>Optimized for compatibility</li>
+        </ol>
+
+        <h4>Export as SVG (⌘E)</h4>
+        <ol class="step-list">
+            <li>Choose File > Export SVG</li>
+            <li>Configure SVG options:
+                <ul>
+                    <li><strong>Styling:</strong> Internal CSS or inline styles</li>
+                    <li><strong>Font:</strong> Convert to outlines or embed</li>
+                    <li><strong>Images:</strong> Embed or link</li>
+                    <li><strong>Decimal Places:</strong> 1-3 for web</li>
+                </ul>
+            </li>
+            <li>Optimization settings:
+                <ul>
+                    <li>Minify output</li>
+                    <li>Remove hidden elements</li>
+                    <li>Merge similar paths</li>
+                </ul>
+            </li>
+            <li>Click Export</li>
+        </ol>
+
+        <h3>When to Use SVG</h3>
+        <ul>
+            <li>Web graphics and icons</li>
+            <li>Responsive designs</li>
+            <li>Animated graphics</li>
+            <li>Further editing in other apps</li>
+            <li>Code-based workflows</li>
+        </ul>
+
+        <h2>AutoCAD/Fusion 360 SVG Export</h2>
+
+        <h3>Special AutoDesk Export (⌘⌥E)</h3>
+        <p><strong>Optimized for AutoDesk Fusion 360 and AutoCAD compatibility.</strong></p>
+
+        <h4>Critical Settings</h4>
+        <ul>
+            <li><strong>DPI:</strong> Forced to 96 DPI</li>
+            <li><strong>Scale:</strong> 1.33333 (4/3 ratio)</li>
+            <li><strong>Units:</strong> Absolute units in pixels</li>
+            <li><strong>Coordinate:</strong> Precision to 4 decimal places</li>
+        </ul>
+
+        <h4>Export Process</h4>
+        <ol class="step-list">
+            <li>Choose File > Export AutoDesk SVG (⌘⌥E)</li>
+            <li>Automatic settings applied:
+                <ul>
+                    <li>96 DPI resolution</li>
+                    <li>1.33333× scale factor</li>
+                    <li>Absolute positioning</li>
+                    <li>No transforms on paths</li>
+                </ul>
+            </li>
+            <li>Name with _fusion suffix</li>
+            <li>Import directly into Fusion 360</li>
+        </ol>
+
+        <h4>Why These Settings Matter</h4>
+        <ul>
+            <li>Fusion 360 expects 96 DPI (Windows standard)</li>
+            <li>1.33333 scale compensates for DPI differences</li>
+            <li>Ensures 1:1 dimensional accuracy</li>
+            <li>Prevents scaling issues in CAD</li>
+        </ul>
+
+        <h4>Best Practices for AutoDesk</h4>
+        <ul>
+            <li>Use simple paths without effects</li>
+            <li>Convert text to outlines first</li>
+            <li>Avoid gradients and transparency</li>
+            <li>Keep paths closed for extrusion</li>
+            <li>Verify dimensions after import</li>
+        </ul>
+
+        <h2>PNG Export Options</h2>
+
+        <h3>Standard PNG Export (⌃⌘E)</h3>
+        <ul>
+            <li>Quick export at screen resolution</li>
+            <li>Transparent background by default</li>
+            <li>Current zoom level = export size</li>
+            <li>Includes selected objects only if active</li>
+        </ul>
+
+        <h3>macOS App Icon Sizes</h3>
+        <p><strong>Export icons for macOS applications:</strong></p>
+
+        <h4>Required Icon Sizes</h4>
+        <table class="icon-table">
+            <tr><th>Size</th><th>@1x</th><th>@2x</th><th>Usage</th></tr>
+            <tr><td>16pt</td><td>16×16</td><td>32×32</td><td>Finder, small</td></tr>
+            <tr><td>32pt</td><td>32×32</td><td>64×64</td><td>Finder, medium</td></tr>
+            <tr><td>64pt</td><td>64×64</td><td>128×128</td><td>Finder, large</td></tr>
+            <tr><td>128pt</td><td>128×128</td><td>256×256</td><td>Finder, jumbo</td></tr>
+            <tr><td>256pt</td><td>256×256</td><td>512×512</td><td>App Store, @1x</td></tr>
+            <tr><td>512pt</td><td>512×512</td><td>1024×1024</td><td>App Store, @2x</td></tr>
+        </table>
+
+        <h4>Batch Export for Icons</h4>
+        <ol class="step-list">
+            <li>Design icon at 1024×1024</li>
+            <li>Choose File > Export Icon Set</li>
+            <li>Select "macOS App Icons"</li>
+            <li>All sizes exported automatically</li>
+            <li>Named correctly for Xcode</li>
+        </ol>
+
+        <h2>Apple Icon Composer Export</h2>
+
+        <h3>Preparing for Icon Composer</h3>
+        <p><strong>Legacy tool for creating .icns files:</strong></p>
+
+        <h4>Export Process</h4>
+        <ol class="step-list">
+            <li>Create your icon at 1024×1024</li>
+            <li>Export as PNG with transparency</li>
+            <li>Export these specific sizes:
+                <ul>
+                    <li>16×16 (icon_16x16.png)</li>
+                    <li>32×32 (icon_32x32.png)</li>
+                    <li>128×128 (icon_128x128.png)</li>
+                    <li>256×256 (icon_256x256.png)</li>
+                    <li>512×512 (icon_512x512.png)</li>
+                    <li>1024×1024 (icon_512x512@2x.png)</li>
+                </ul>
+            </li>
+            <li>Drag into Icon Composer slots</li>
+            <li>Save as .icns file</li>
+        </ol>
+
+        <h4>Modern Alternative</h4>
+        <p>Use <code>iconutil</code> command line tool instead:</p>
+        <ol class="step-list">
+            <li>Export icon set from InkPen</li>
+            <li>Create iconset folder structure</li>
+            <li>Run: <code>iconutil -c icns icon.iconset</code></li>
+            <li>Generates .icns automatically</li>
+        </ol>
+
+        <h2>iOS App Icon Export</h2>
+
+        <h3>Required iOS Sizes</h3>
+        <table class="icon-table">
+            <tr><th>Device</th><th>@2x</th><th>@3x</th><th>Points</th></tr>
+            <tr><td>iPhone Notification</td><td>40×40</td><td>60×60</td><td>20pt</td></tr>
+            <tr><td>iPhone Settings</td><td>58×58</td><td>87×87</td><td>29pt</td></tr>
+            <tr><td>iPhone Spotlight</td><td>80×80</td><td>120×120</td><td>40pt</td></tr>
+            <tr><td>iPhone App</td><td>120×120</td><td>180×180</td><td>60pt</td></tr>
+            <tr><td>iPad Notification</td><td>40×40</td><td>—</td><td>20pt</td></tr>
+            <tr><td>iPad Settings</td><td>58×58</td><td>—</td><td>29pt</td></tr>
+            <tr><td>iPad Spotlight</td><td>80×80</td><td>—</td><td>40pt</td></tr>
+            <tr><td>iPad App</td><td>152×152</td><td>—</td><td>76pt</td></tr>
+            <tr><td>iPad Pro App</td><td>167×167</td><td>—</td><td>83.5pt</td></tr>
+            <tr><td>App Store</td><td>1024×1024</td><td>—</td><td>—</td></tr>
+        </table>
+
+        <h2>Format Comparison</h2>
+
+        <table class="format-table">
+            <tr>
+                <th>Feature</th>
+                <th>.inkpen</th>
+                <th>.pdf</th>
+                <th>.svg</th>
+                <th>.png</th>
+            </tr>
+            <tr>
+                <td>Vector</td>
+                <td>✓</td>
+                <td>✓</td>
+                <td>✓</td>
+                <td>✗</td>
+            </tr>
+            <tr>
+                <td>Editable</td>
+                <td>✓</td>
+                <td>Limited</td>
+                <td>✓</td>
+                <td>✗</td>
+            </tr>
+            <tr>
+                <td>Layers</td>
+                <td>✓</td>
+                <td>✗</td>
+                <td>Groups</td>
+                <td>✗</td>
+            </tr>
+            <tr>
+                <td>Gradients</td>
+                <td>✓</td>
+                <td>✓</td>
+                <td>✓</td>
+                <td>Rasterized</td>
+            </tr>
+            <tr>
+                <td>Text</td>
+                <td>Editable</td>
+                <td>Outlined</td>
+                <td>Optional</td>
+                <td>Rasterized</td>
+            </tr>
+            <tr>
+                <td>File Size</td>
+                <td>Small</td>
+                <td>Medium</td>
+                <td>Small</td>
+                <td>Large</td>
+            </tr>
+            <tr>
+                <td>Web Use</td>
+                <td>✗</td>
+                <td>✓</td>
+                <td>✓</td>
+                <td>✓</td>
+            </tr>
+            <tr>
+                <td>Print</td>
+                <td>✗</td>
+                <td>✓</td>
+                <td>✓</td>
+                <td>DPI dependent</td>
+            </tr>
+        </table>
+
+        <h2>Workflow Recommendations</h2>
+
+        <h3>Design Workflow</h3>
+        <ol>
+            <li><strong>Always save as .inkpen first</strong> - Preserve editability</li>
+            <li><strong>Export copies</strong> - Never work on exports</li>
+            <li><strong>Version control</strong> - Save incremental .inkpen files</li>
+            <li><strong>Final delivery</strong> - Export required formats</li>
+        </ol>
+
+        <h3>Format Selection Guide</h3>
+        <ul>
+            <li><strong>Working file:</strong> Always .inkpen</li>
+            <li><strong>Client review:</strong> PDF (universal viewing)</li>
+            <li><strong>Web graphics:</strong> SVG (scalable) or PNG (compatibility)</li>
+            <li><strong>Print shop:</strong> PDF with outlines and CMYK</li>
+            <li><strong>CAD/3D:</strong> AutoDesk SVG with proper scaling</li>
+            <li><strong>App icons:</strong> PNG at multiple sizes</li>
+        </ul>
+
+        <p><a href="export.html">← Back to Export Guide</a> | <a href="index.html">← Back to Help Topics</a></p>
+    </div>
+
+    <style>
+        .icon-table, .format-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        .icon-table th, .icon-table td,
+        .format-table th, .format-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        .icon-table th, .format-table th {
+            background: #f5f5f5;
+            font-weight: 600;
+        }
+
+        .icon-table td:first-child {
+            font-weight: 500;
+        }
+
+        code {
+            background: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'SF Mono', Monaco, Courier, monospace;
+        }
+    </style>
+    <div id="footer-container"></div>
+    <script src="common.js"></script>
+</body>
+</html>

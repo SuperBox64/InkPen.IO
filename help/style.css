@@ -1,0 +1,191 @@
+/* Apple Help Book Stylesheet for Logos InkPen */
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.6;
+    color: #000;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.banner {
+    background: #000;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.banner h1 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: white;
+}
+
+.content {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.intro {
+    font-size: 15px;
+    color: #000;
+    margin-bottom: 30px;
+    padding: 15px;
+    background: #f9f9f9;
+    border-left: 4px solid #666;
+}
+
+.topics h2 {
+    font-size: 18px;
+    color: #000;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.topics ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.topics li {
+    margin: 8px 0;
+}
+
+.topics a {
+    color: #000;
+    text-decoration: none;
+    display: inline-block;
+    padding: 4px 0;
+    transition: color 0.2s;
+}
+
+.topics a:hover {
+    color: #333;
+    text-decoration: underline;
+}
+
+.search-tip {
+    margin-top: 30px;
+    padding: 15px;
+    background: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.search-tip p {
+    margin: 0;
+    color: #000;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+    font-size: 11px;
+}
+
+/* Page-specific styles */
+h1, h2, h3, h4, h5, h6 {
+    color: #000;
+}
+
+h2 {
+    font-size: 20px;
+    color: #000;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 16px;
+    color: #000;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+p {
+    margin: 10px 0;
+    color: #000;
+}
+
+a {
+    color: #000;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #333;
+}
+
+code {
+    font-family: "SF Mono", Monaco, Courier, monospace;
+    font-size: 12px;
+    background: #f4f4f4;
+    padding: 2px 6px;
+    border-radius: 3px;
+    color: #000;
+}
+
+.note {
+    padding: 10px;
+    background: #f0f0f0;
+    border-left: 4px solid #666;
+    margin: 15px 0;
+    color: #000;
+}
+
+.warning {
+    padding: 10px;
+    background: #e8e8e8;
+    border-left: 4px solid #999;
+    margin: 15px 0;
+    color: #000;
+}
+
+.step-list {
+    counter-reset: step-counter;
+    list-style: none;
+    padding: 0;
+}
+
+.step-list li {
+    counter-increment: step-counter;
+    margin-bottom: 15px;
+    position: relative;
+    padding-left: 40px;
+    color: #000;
+}
+
+.step-list li::before {
+    content: counter(step-counter);
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #000;
+    color: white;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* Ensure all text elements are black */
+ul, ol, li, td, th, strong, em {
+    color: #000;
+}

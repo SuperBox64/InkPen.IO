@@ -1,0 +1,43 @@
+/* Footer CSS - Used across all pages */
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 37px 0 38px 0;
+    width: 100%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    margin-bottom: -20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+footer .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+footer .footer-content {
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: 0 auto;
+    font-size: 1rem;  /* This is the actual size from the main page */
+}
+
+footer .footer-content div {
+    color: #fff;
+}
+
+footer .footer-content a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer .footer-content a:hover {
+    text-decoration: underline;
+}
