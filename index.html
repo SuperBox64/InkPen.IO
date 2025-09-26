@@ -115,6 +115,7 @@
             letter-spacing: 0.1em;
             transition: all 0.3s ease;
             border: 1px solid #000;
+            border-radius: 20px;
             margin: 0.5rem;
             min-width: 200px;
             text-align: center;
@@ -159,6 +160,90 @@
             color: #ccc;
         }
 
+        .release-section {
+            background: linear-gradient(135deg, #f5f5f5 0%, #ffffff 100%);
+            padding: 2rem 0;
+            position: relative;
+        }
+
+        .release-table {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+            margin: 0 auto;
+            max-width: 900px;
+        }
+
+        .release-table h3 {
+            font-size: 1.2rem;
+            font-weight: 300;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: #333;
+            padding: 2rem;
+            margin: 0;
+            background: #000;
+            color: #fff;
+        }
+
+        .release-table table {
+            width: 100%;
+            border-collapse: collapse;
+            table-layout: auto;
+        }
+
+        .release-table th {
+            padding: 0.5rem;
+            text-align: left;
+            font-weight: 500;
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            letter-spacing: 0.05em;
+            color: #666;
+            background: #f9f9f9;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .release-table td {
+            padding: 0.5rem;
+            font-size: 0.9rem;
+            color: #000;
+            border-bottom: 1px solid #f0f0f0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            white-space: nowrap;
+            width: auto;
+        }
+
+        .release-table td:last-child {
+            width: 1%;
+        }
+
+        .release-table tr:hover td {
+            background: rgba(0, 0, 0, 0.02);
+        }
+
+        .hash-cell {
+            font-size: 0.9rem;
+            color: #000;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            white-space: nowrap;
+            width: fit-content;
+        }
+
+        .version-badge {
+            display: inline-block;
+            background: #000;
+            color: #fff;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
         @media (max-width: 768px) {
             .container {
                 padding: 0 20px;
@@ -182,20 +267,20 @@
     <section class="hero">
         <div class="container">
             <div class="hero-content">
-                <div class="test-drive-inkpen"><a href="https://github.com/SuperBox64/InkPen.IO/releases/download/1.0-MVP-Beta-Feedback-Wanted/logos.inkpen.io-1.0b3.zip" style="color: inherit; text-decoration: none;" title="Logos InkPen has been signed by Apple">TAKE INKPEN FOR A TEST DRIVE</a></div>
+                <div class="test-drive-inkpen"><a href="https://github.com/SuperBox64/InkPen.IO/releases/download/1.0-MVP-Beta-Feedback-Wanted/logos.inkpen.io-1.0b9.zip" style="color: inherit; text-decoration: none;">TAKE INKPEN FOR A TEST DRIVE</a></div>
                 <h1 class="main-title">Logos InkPen 1.0</h1>
                 <p class="subtitle">Professional vector art & design for Macintosh</p>
 
-                <a href="https://github.com/SuperBox64/InkPen.IO/releases/download/1.0-MVP-Beta-Feedback-Wanted/logos.inkpen.io-1.0b3.zip" title="Logos InkPen has been signed by Apple">
+                <a href="https://github.com/SuperBox64/InkPen.IO/releases/download/1.0-MVP-Beta-Feedback-Wanted/logos.inkpen.io-1.0b9.zip">
                     <img src="InkPen MVP Beta Available For Download Now.png" alt="InkPen Application Interface" class="app-image">
                 </a>
 
                 <p class="description">
-                    Logos InkPen, a Vector Art & Design App for macOS 14, 15 and 16! 1.0b3 available for download. Brush tool adds pressure sensitive Apple Pencil support for Luna Display and Apple Sidecar, and introduces Liquid. Built on SwiftUI, Metal and CoreGraphics. Wacom drivers are recommended. InkPen was inspired by Macromedia FreeHand MX and contains many of its core features.
+                    Logos InkPen, a Vector Art & Design App for macOS 14, 15 and 16! 1.0b9 available for download. Brush tool adds pressure sensitive Apple Pencil support for Luna Display and Apple Sidecar, and introduces Liquid. Built on SwiftUI, Metal and CoreGraphics. Wacom drivers are recommended. InkPen was inspired by Macromedia FreeHand MX and contains many of its core features.
                 </p>
 
                 <div class="cta-section">
-                    <a href="https://github.com/SuperBox64/InkPen.IO/releases/download/1.0-MVP-Beta-Feedback-Wanted/logos.inkpen.io-1.0b3.zip" class="cta-button" title="Logos InkPen has been signed by Apple">Download InkPen</a>
+                    <a href="https://github.com/SuperBox64/InkPen.IO/releases/download/1.0-MVP-Beta-Feedback-Wanted/logos.inkpen.io-1.0b9.zip" class="cta-button">Download InkPen</a>
                     <a href="https://chat.xcf.ai" class="cta-button" target="_blank">Join the Chat</a>
                     <a href="https://www.paypal.com/ncp/payment/3DTH3S7XARK98" class="cta-button" target="_blank">PayPal Tip Jar</a>
                 </div>
@@ -209,6 +294,38 @@
             <div style="font-size: 0.825rem; color: #333; font-weight: 400; text-transform: uppercase; letter-spacing: 0.1em;"><a href="#" onclick="window.location.href='mailto:logos@inkpen.io?subject=I%27d%20like%20to%20inquire%20about%20Logos%20Inkpen%20please&body=Dear%20Todd%2C%0A%0A'; return false;" style="color: #333; text-decoration: none;">CONTACT US</a></div>
         </div>
     </div>
+
+    <section class="release-section">
+        <div class="container">
+            <div class="release-table">
+                <h3>Release Information</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Version</th>
+                            <th>Release Date</th>
+                            <th>Size</th>
+                            <th>SHA256 Checksum</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a href="https://github.com/SuperBox64/InkPen.IO/releases/download/1.0-MVP-Beta-Feedback-Wanted/logos.inkpen.io-1.0b9.zip" style="text-decoration: none;"><span class="version-badge">1.0b9</span></a></td>
+                            <td>September 26, 2025</td>
+                            <td>6.3 MB</td>
+                            <td>
+                                <div class="hash-cell">
+                                    <span id="sha256-hash">6e9e7ee5e598c9e558f595f791f69cb5f8e4fe555980a66bdbf9586b1f0b82ad</span>
+                                    <button onclick="navigator.clipboard.writeText('6e9e7ee5e598c9e558f595f791f69cb5f8e4fe555980a66bdbf9586b1f0b82ad').then(() => { this.innerHTML = '✓'; setTimeout(() => this.innerHTML = '⧉', 2000); })" style="padding: 4px 8px; background: #000; color: #fff; border: none; border-radius: 4px; cursor: pointer; font-size: 1rem; flex-shrink: 0;">⧉</button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
     <footer style="background-color: #000; color: #fff; padding: 30px 0; width: 100%;">
         <div class="container">
             <div style="font-family: 'Courier New', Courier, monospace; display: flex; justify-content: space-between; width: 100%;">
