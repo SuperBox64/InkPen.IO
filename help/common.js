@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     <div class="container">
                         <div class="footer-content">
                             <div>InkPen Vector Art Reimagined</div>
-                            <div><a href="index.html">Documentation</a></div>
+                            <div><a href="../index.html">Back to InkPen</a></div>
                             <div>Copyright 2025 Logos InkPen LLC</div>
                         </div>
                     </div>
