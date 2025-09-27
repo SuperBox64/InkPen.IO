@@ -5,7 +5,10 @@
       "Read(//Users/toddbruss/Documents/GitHub/logos/logos inkpen.io/**)",
       "mcp__xcf-server__create_diff_from_doc",
       "mcp__xcf-server__apply_diff_to_doc",
-      "mcp__xcf-server__xcf"
+      "mcp__xcf-server__xcf",
+      "mcp__xcf-server__list_projects",
+      "mcp__xcf-server__read_dir",
+      "Read(//Users/toddbruss/Documents/GitHub/logos/**)"
     ],
     "deny": [],
     "ask": []
