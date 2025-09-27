@@ -8,25 +8,16 @@ document.addEventListener('DOMContentLoaded', function() {
         document.body.appendChild(footerContainer);
     }
 
-    // Load footer HTML
-    fetch('footer.html')
-        .then(response => response.text())
-        .then(data => {
-            footerContainer.innerHTML = data;
-        })
-        .catch(error => {
-            console.error('Error loading footer:', error);
-            // Fallback footer if loading fails
-            footerContainer.innerHTML = `
-                <footer>
-                    <div class="container">
-                        <div class="footer-content">
-                            <div>InkPen, Vector Art Reimagined</div>
-                            <div><a href="../index.html">Back to InkPen</a></div>
-                            <div>Copyright 2025 Logos InkPen LLC</div>
-                        </div>
-                    </div>
-                </footer>
-            `;
-        });
+    // Just insert the footer HTML directly
+    footerContainer.innerHTML = `
+        <footer>
+            <div class="container">
+                <div class="footer-content">
+                    <div><a href="https://chat.xcf.ai" target="_blank" style="color: inherit;">Join the Discussion</a></div>
+                    <div><a href="../index.html" style="color: inherit;">Back to InkPen</a></div>
+                    <div>&copy; 2025 Logos InkPen</div>
+                </div>
+            </div>
+        </footer>
+    `;
 });

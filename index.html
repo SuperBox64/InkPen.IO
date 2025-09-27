@@ -96,6 +96,97 @@
             box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
         }
 
+        /* Carousel Styles */
+        .carousel-container {
+            position: relative;
+            max-width: 100%;
+            margin: 2rem auto;
+            overflow: hidden;
+            border-radius: 20px;
+        }
+
+        .carousel-wrapper {
+            position: relative;
+            width: 100%;
+            height: 600px;
+        }
+
+        .carousel-slide {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 1.5s cubic-bezier(0.4, 0.0, 0.2, 1);
+        }
+
+        .carousel-slide.active {
+            opacity: 1;
+        }
+
+        .carousel-slide img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: contain;
+            border-radius: 20px;
+        }
+
+        .carousel-controls {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 20px;
+            pointer-events: none;
+        }
+
+        .carousel-button {
+            background: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            font-size: 24px;
+            cursor: pointer;
+            pointer-events: all;
+            transition: background 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .carousel-button:hover {
+            background: rgba(0, 0, 0, 0.9);
+        }
+
+        .carousel-dots {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .carousel-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #ccc;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .carousel-dot.active {
+            background: #000;
+        }
+
         .description {
             font-size: 0.9rem;
             line-height: 1.5;
@@ -309,9 +400,42 @@
                 <h1 class="main-title">Logos InkPen Beta</h1>
                 <p class="subtitle">Professional vector art & design for Macintosh</p>
 
-                <a href="https://github.com/SuperBox64/InkPen.IO/releases/download/1.0-MVP-Beta-Feedback-Wanted/logos.inkpen.io-1.0b12.zip">
-                    <img src="InkPen MVP Beta Available For Download Now.png" alt="InkPen Application Interface" class="app-image">
-                </a>
+                <div class="carousel-container">
+                    <div class="carousel-wrapper" id="carouselWrapper">
+                        <div class="carousel-slide active">
+                            <a href="https://github.com/SuperBox64/InkPen.IO/releases/download/1.0-MVP-Beta-Feedback-Wanted/logos.inkpen.io-1.0b12.zip">
+                                <img src="slideshow/1-inkpen.png" alt="InkPen Application Interface">
+                            </a>
+                        </div>
+                        <div class="carousel-slide">
+                            <a href="https://github.com/SuperBox64/InkPen.IO/releases/download/1.0-MVP-Beta-Feedback-Wanted/logos.inkpen.io-1.0b12.zip">
+                                <img src="slideshow/2-hello.png" alt="InkPen Hello Screenshot">
+                            </a>
+                        </div>
+                        <div class="carousel-slide">
+                            <a href="https://github.com/SuperBox64/InkPen.IO/releases/download/1.0-MVP-Beta-Feedback-Wanted/logos.inkpen.io-1.0b12.zip">
+                                <img src="slideshow/3-apple.png" alt="InkPen Apple Logo">
+                            </a>
+                        </div>
+                        <div class="carousel-slide">
+                            <a href="https://github.com/SuperBox64/InkPen.IO/releases/download/1.0-MVP-Beta-Feedback-Wanted/logos.inkpen.io-1.0b12.zip">
+                                <img src="slideshow/4-atari.png" alt="InkPen Atari Logo">
+                            </a>
+                        </div>
+                        <div class="carousel-slide">
+                            <a href="https://github.com/SuperBox64/InkPen.IO/releases/download/1.0-MVP-Beta-Feedback-Wanted/logos.inkpen.io-1.0b12.zip">
+                                <img src="slideshow/5-finder.png" alt="InkPen Finder Interface">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="carousel-dots">
+                        <span class="carousel-dot active" onclick="goToSlide(0)"></span>
+                        <span class="carousel-dot" onclick="goToSlide(1)"></span>
+                        <span class="carousel-dot" onclick="goToSlide(2)"></span>
+                        <span class="carousel-dot" onclick="goToSlide(3)"></span>
+                        <span class="carousel-dot" onclick="goToSlide(4)"></span>
+                    </div>
+                </div>
 
                 <p class="description">
                     Logos InkPen, a Vector Art & Design App for macOS 14, 15 and 26! 1.0b12 available for download. Brush tool adds pressure sensitive Apple Pencil support for Luna Display and Apple Sidecar, and introduces Liquid. Built on SwiftUI, Metal and CoreGraphics. Wacom drivers are recommended. Fixed Vector Text to Outlines. InkPen was inspired by Macromedia FreeHand MX and contains many of its core features.
@@ -319,7 +443,7 @@
 
                 <div class="cta-section">
                     <a href="https://github.com/SuperBox64/InkPen.IO/releases/download/1.0-MVP-Beta-Feedback-Wanted/logos.inkpen.io-1.0b12.zip" class="cta-button">Download InkPen</a>
-                    <a href="https://chat.xcf.ai" class="cta-button" target="_blank">Join the Chat</a>
+                    <a href="https://testflight.apple.com/join/DD8BPpga" class="cta-button" target="_blank">Apple TestFlight</a>
                     <a href="https://www.paypal.com/ncp/payment/3DTH3S7XARK98" class="cta-button" target="_blank">PayPal Tip Jar</a>
                 </div>
             </div>
@@ -383,11 +507,75 @@
     <footer>
         <div class="container">
             <div class="footer-content">
-                <div>InkPen, Vector Art Reimagined</div>
+                <div><a href="https://chat.xcf.ai" target="_blank" style="color: inherit;">Join the Discussion</a></div>
                 <div><a href="help/index.html">Documentation</a></div>
-                <div>Copyright 2025 Logos InkPen LLC</div>
+                <div>&copy; 2025 Logos InkPen</div>
             </div>
         </div>
     </footer>
+    <script>
+        let currentSlide = 0;
+        let slides;
+        let dots;
+        let autoPlayInterval;
+        let isPaused = false;
+
+        document.addEventListener('DOMContentLoaded', function() {
+            slides = document.querySelectorAll('.carousel-slide');
+            dots = document.querySelectorAll('.carousel-dot');
+            const dotContainer = document.querySelector('.carousel-dots');
+
+            // Pause on hover over dots
+            dotContainer.addEventListener('mouseenter', () => {
+                isPaused = true;
+                clearInterval(autoPlayInterval);
+            });
+
+            dotContainer.addEventListener('mouseleave', () => {
+                isPaused = false;
+                startAutoPlay();
+            });
+
+            // Start auto-play
+            startAutoPlay();
+        });
+
+        function showSlide(index) {
+            if (!slides || !dots) return;
+
+            if (index >= slides.length) index = 0;
+            if (index < 0) index = slides.length - 1;
+
+            // Fade out current slide
+            slides[currentSlide].classList.remove('active');
+            dots[currentSlide].classList.remove('active');
+
+            // Fade in new slide
+            currentSlide = index;
+            slides[currentSlide].classList.add('active');
+            dots[currentSlide].classList.add('active');
+        }
+
+        function nextSlide() {
+            showSlide(currentSlide + 1);
+        }
+
+        function previousSlide() {
+            showSlide(currentSlide - 1);
+        }
+
+        function goToSlide(index) {
+            showSlide(index);
+        }
+
+        function startAutoPlay() {
+            clearInterval(autoPlayInterval);
+            if (!isPaused) {
+                autoPlayInterval = setInterval(() => {
+                    nextSlide();
+                }, 4000);
+            }
+        }
+    </script>
 </body>
 </html>
