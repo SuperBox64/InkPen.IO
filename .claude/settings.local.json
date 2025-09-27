@@ -1,12 +1,11 @@
 {
   "permissions": {
     "allow": [
-      "Bash(git add:*)",
-      "Bash(for:*)",
-      "Bash(do if ! grep -q \"footer.css\" \"$file\")",
-      "Bash(then basename \"$file\")",
-      "Bash(fi)",
-      "Bash(done)"
+      "mcp__xcf-server__read_file",
+      "Read(//Users/toddbruss/Documents/GitHub/logos/logos inkpen.io/**)",
+      "mcp__xcf-server__create_diff_from_doc",
+      "mcp__xcf-server__apply_diff_to_doc",
+      "mcp__xcf-server__xcf"
     ],
     "deny": [],
     "ask": []
