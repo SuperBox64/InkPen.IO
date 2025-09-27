@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <footer>
                     <div class="container">
                         <div class="footer-content">
-                            <div>InkPen Vector Art Reimagined</div>
+                            <div>InkPen, Vector Art Reimagined</div>
                             <div><a href="../index.html">Back to InkPen</a></div>
                             <div>Copyright 2025 Logos InkPen LLC</div>
                         </div>
