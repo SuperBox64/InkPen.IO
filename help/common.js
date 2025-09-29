@@ -13,9 +13,9 @@ document.addEventListener('DOMContentLoaded', function() {
         <footer>
             <div class="container">
                 <div class="footer-content">
-                    <div><a href="https://chat.xcf.ai" target="_blank" style="color: inherit;">Join the Discussion</a></div>
-                    <div><a href="../index.html" style="color: inherit;">Back to InkPen</a></div>
-                    <div>&copy; 2025 Logos InkPen</div>
+                    <div><a href="https://chat.xcf.ai" target="_blank" style="color: inherit;">Chat</a></div>
+                    <div><a href="../index.html" style="color: inherit;">Docs</a></div>
+                    <div>&copy; 2025</div>
                 </div>
             </div>
         </footer>
