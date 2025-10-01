@@ -10,7 +10,8 @@
       "mcp__xcf-server__read_dir",
       "Read(//Users/toddbruss/Documents/GitHub/logos/**)",
       "mcp__xcf-server__build_project",
-      "Read(//Users/toddbruss/Desktop/**)"
+      "Read(//Users/toddbruss/Desktop/**)",
+      "Bash(sips:*)"
     ],
     "deny": [],
     "ask": []
