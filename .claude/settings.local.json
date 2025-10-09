@@ -11,7 +11,8 @@
       "Read(//Users/toddbruss/Documents/GitHub/logos/**)",
       "mcp__xcf-server__build_project",
       "Read(//Users/toddbruss/Desktop/**)",
-      "Bash(sips:*)"
+      "Bash(sips:*)",
+      "Bash(curl:*)"
     ],
     "deny": [],
     "ask": []
