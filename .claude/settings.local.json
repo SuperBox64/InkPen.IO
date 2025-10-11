@@ -12,7 +12,11 @@
       "mcp__xcf-server__build_project",
       "Read(//Users/toddbruss/Desktop/**)",
       "Bash(sips:*)",
-      "Bash(curl:*)"
+      "Bash(curl:*)",
+      "Bash(git tag:*)",
+      "Bash(git push:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
     ],
     "deny": [],
     "ask": []
