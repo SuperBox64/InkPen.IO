@@ -16,9 +16,13 @@
       "Bash(git tag:*)",
       "Bash(git push:*)",
       "Bash(git add:*)",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "mcp__xcf-server__create_doc",
+      "mcp__xcf-server__run_project",
+      "mcp__xcf-server__snippet"
     ],
     "deny": [],
     "ask": []
-  }
+  },
+  "spinnerTipsEnabled": false
 }
