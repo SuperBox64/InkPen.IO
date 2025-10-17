@@ -19,7 +19,8 @@
       "Bash(git commit:*)",
       "mcp__xcf-server__create_doc",
       "mcp__xcf-server__run_project",
-      "mcp__xcf-server__snippet"
+      "mcp__xcf-server__snippet",
+      "Bash(open:*)"
     ],
     "deny": [],
     "ask": []
