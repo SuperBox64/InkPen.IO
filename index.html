@@ -132,11 +132,11 @@
         }
 
         .carousel-slide img {
-            width: 100%;
-            height: calc(100% + 8px);
+            width: 98%;
+            height: 98%;
             display: block;
             object-fit: cover;
-            margin: 2px 0;
+            margin: auto;
         }
 
         .carousel-controls {
@@ -350,13 +350,12 @@
             display: inline-block;
             background: #000;
             color: #fff;
-            padding: 0.25rem 0.75rem;
+            padding: 0.25rem 0.5rem;
             border-radius: 20px;
             font-size: 0.8rem;
             font-weight: 500;
             transition: all 0.3s ease;
             border: 1px solid #000;
-            min-width: 70px;
             text-align: center;
         }
 
@@ -448,6 +447,63 @@
                 margin: 5px 0 11px 0 !important;
                 padding: 10px 0 7.5px 0 !important;
             }
+        }
+
+        /* Creator Section Styles */
+        .creator-section {
+            background-color: #fff;
+            color: #000;
+            padding: 30px 0 0 0;
+            width: 100%;
+            text-align: center;
+            border-top: 1px solid #000;
+        }
+
+        .creator-title {
+            font-size: 1.1rem;
+            font-weight: 300;
+            margin-bottom: 0.125rem;
+            color: #000;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        .creator-image-container {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            overflow: hidden;
+            margin: calc(0.125rem + 7.5px) auto calc(1rem + 10px);
+            max-width: 300px;
+            height: 470px;
+            padding: 0;
+        }
+
+        .creator-image {
+            width: 130%;
+            display: block;
+            margin-top: -55px;
+            margin-left: -15%;
+            margin-bottom: -100px;
+        }
+
+        .creator-location {
+            font-size: 0.825rem;
+            color: #333;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-top: -7.5px;
+            padding-bottom: 30px;
+        }
+
+        .creator-location a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        .creator-location a:hover {
+            text-decoration: underline;
         }
 
         /* Countdown Banner Styles */
@@ -567,9 +623,9 @@
     <section class="hero">
         <div class="container">
             <div class="hero-content">
-                <div class="test-drive-inkpen">TRY LOGOS INKPEN FOR FREE</div>
+                <div class="test-drive-inkpen">TRY LOGOS INKPEN PREVIEW FOR FREE</div>
                 <h1 class="main-title">Logos InkPen Beta</h1>
-                <p class="subtitle">Vector art & design for Macintosh</p>
+                <p class="subtitle">Professional Vector Art & Design for Macintosh</p>
 
                 <div class="carousel-container">
                     <div class="carousel-wrapper" id="carouselWrapper">
@@ -619,17 +675,17 @@
         </div>
     </section>
 
-    <div style="background-color: #fff; color: #000; padding: 30px 0 0 0; width: 100%; text-align: center; border-top: 1px solid #000;">
+    <div class="creator-section">
         <div class="container">
-            <div style="font-size: 1.1rem; font-weight: 300; margin-bottom: 0.125rem; color: #000; text-transform: uppercase; letter-spacing: 0.1em;">INKPEN CREATOR</div>
+            <div class="creator-title">LOGOS INKPEN.IO LLC</div>
 
-            <div style="background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-radius: 20px; overflow: hidden; margin: 0.125rem auto calc(1rem + 10px); max-width: 600px; padding: 1rem 1rem 0.25rem 1rem;">
+            <div class="creator-image-container">
                 <a href="https://www.linkedin.com/in/toddbruss-ios-macos-swift-developer-software-engineer/" target="_blank">
-                    <img src="todd-bruss-photo.png?v=1735671234" alt="Todd" style="width: 45%; height: auto; border-radius: 20px; margin-bottom: 0.5rem;">
+                    <img src="logos_InkPen_IO_LLC_pen_and_ink.png" alt="Todd" class="creator-image">
                 </a>
-                <div style="font-size: 0.825rem; color: #333; font-weight: 400; text-transform: uppercase; letter-spacing: 0.1em;">
-                    <a href="https://www.linkedin.com/in/toddbruss-ios-macos-swift-developer-software-engineer/" target="_blank" style="color: #333; text-decoration: none;" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">TODD BRUSS</a>
-                </div>
+            </div>
+            <div class="creator-location">
+                <a href="https://www.linkedin.com/in/toddbruss-ios-macos-swift-developer-software-engineer/" target="_blank">CHARLOTTE, NORTH CAROLINA</a>
             </div>
 
             <!-- <div style="font-size: 0.825rem; color: #333; font-weight: 400; text-transform: uppercase; letter-spacing: 0.1em; margin-top: 0.5rem;">
@@ -641,90 +697,17 @@
     <section class="release-section">
         <div class="container">
             <div class="release-table" style="margin-bottom: 2rem; margin-top: 40px;">
-                <h3>RELEASE NOTES 1.0b26</h3>
+                <h3>RELEASE NOTES 1.0B26 PREVIEW</h3>
                 <div style="padding: 1rem; text-align: left;">
                     <ul style="list-style: none; padding-left: 0; line-height: 1.8; font-size: 0.85rem; color: #000; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;">
+                        <li><span style="font-size: 1.7rem; vertical-align: -3.5px; line-height: 0; color: #999;">•</span> File format has been deprecated, build 27 will use the new format</li>
                         <li><span style="font-size: 1.7rem; vertical-align: -3.5px; line-height: 0; color: #999;">•</span> Adjusted fill and stroke opacity responsiveness</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="release-table" style="margin-bottom: 2rem;">
-                <h3>RELEASE NOTES 1.0b25</h3>
-                <div style="padding: 1rem; text-align: left;">
-                    <ul style="list-style: none; padding-left: 0; line-height: 1.8; font-size: 0.85rem; color: #000; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;">
                         <li><span style="font-size: 1.7rem; vertical-align: -3.5px; line-height: 0; color: #999;">•</span> Layer panel totally revamped with draggable eyes and locks</li>
                         <li><span style="font-size: 1.7rem; vertical-align: -3.5px; line-height: 0; color: #999;">•</span> Draggable layers and layer items for better organization</li>
                         <li><span style="font-size: 1.7rem; vertical-align: -3.5px; line-height: 0; color: #999;">•</span> Bounding boxes on drawn shapes for precise editing</li>
                         <li><span style="font-size: 1.7rem; vertical-align: -3.5px; line-height: 0; color: #999;">•</span> Use Command key to temp swap to Arrow Selection Tool to move and scale newly created shapes</li>
                         <li><span style="font-size: 1.7rem; vertical-align: -3.5px; line-height: 0; color: #999;">•</span> Opacity and blend modes work across PDF, SVG and PNG export</li>
                         <li><span style="font-size: 1.7rem; vertical-align: -3.5px; line-height: 0; color: #999;">•</span> InkPen is moving to monthly builds targeting the second Sunday of each month</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="release-table" style="margin-bottom: 2rem;">
-                <h3>RELEASE NOTES 1.0b23</h3>
-                <div style="padding: 1rem; text-align: left;">
-                    <ul style="list-style: none; padding-left: 0; line-height: 1.8; font-size: 0.85rem; color: #000; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;">
-                        <li><span style="font-size: 1.7rem; vertical-align: -3.5px; line-height: 0; color: #999;">•</span> New layers panel for improved workflow</li>
-                        <li><span style="font-size: 1.7rem; vertical-align: -3.5px; line-height: 0; color: #999;">•</span> PDF export now supports layer opacity and blend modes</li>
-                        <li><span style="font-size: 1.7rem; vertical-align: -3.5px; line-height: 0; color: #999;">•</span> SVG export now supports layer opacity and blend modes</li>
-                        <li><span style="font-size: 1.7rem; vertical-align: -3.5px; line-height: 0; color: #999;">•</span> PNG export now supports layer opacity and blend modes</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="release-table" style="margin-bottom: 2rem;">
-                <h3>RELEASE NOTES 1.0b22</h3>
-                <div style="padding: 1rem; text-align: left;">
-                    <ul style="list-style: none; padding-left: 0; line-height: 1.8; font-size: 0.85rem; color: #000; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;">
-                        <li><span style="font-size: 1.7rem; vertical-align: -3.5px; line-height: 0; color: #999;">•</span> Updated font weights for improved typography</li>
-                        <li><span style="font-size: 1.7rem; vertical-align: -3.5px; line-height: 0; color: #999;">•</span> Improvements to PDF parser with SIMD matrices for enhanced performance</li>
-                        <li><span style="font-size: 1.7rem; vertical-align: -3.5px; line-height: 0; color: #999;">•</span> Updated layers functionality for better workflow</li>
-                        <li><span style="font-size: 1.7rem; vertical-align: -3.5px; line-height: 0; color: #999;">•</span> Note: Layer opacity and blend modes will be added to PDF, SVG and PNG export soon</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="release-table" style="margin-bottom: 2rem;">
-                <h3>RELEASE NOTES 1.0b20</h3>
-                <div style="padding: 1rem; text-align: left;">
-                    <ul style="list-style: none; padding-left: 0; line-height: 1.8; font-size: 0.85rem; color: #000; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;">
-                        <li><span style="font-size: 1.7rem; vertical-align: -3.5px; line-height: 0; color: #999;">•</span> Improved embedding native InkPen doc inside PDFs and SVGs as metadata</li>
-                        <li><span style="font-size: 1.7rem; vertical-align: -3.5px; line-height: 0; color: #999;">•</span> Metadata now loads first for faster document opening without parsing entire PDF or SVG</li>
-                        <li><span style="font-size: 1.7rem; vertical-align: -3.5px; line-height: 0; color: #999;">•</span> Added crosshairs to move the page's origin point and rulers to help with centering objects by numbers</li>
-                        <li><span style="font-size: 1.7rem; vertical-align: -3.5px; line-height: 0; color: #999;">•</span> Optimized for Xcode interface elements and PDF/SVG assets</li>
-                        <li><span style="font-size: 1.7rem; vertical-align: -3.5px; line-height: 0; color: #999;">•</span> Enhanced workflow for SpriteKit 2D sprites and Icon Composer</li>
-                        <li><span style="font-size: 1.7rem; vertical-align: -3.5px; line-height: 0; color: #999;">•</span> Ideal for web graphics and Ubuntu Linux icon development</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="release-table" style="margin-bottom: 2rem;">
-                <h3>RELEASE NOTES 1.0b17</h3>
-                <div style="padding: 1rem; text-align: left;">
-                    <ul style="list-style: none; padding-left: 0; line-height: 1.8; font-size: 0.85rem; color: #000; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;">
-                        <li><span style="font-size: 1.7rem; vertical-align: -3.5px; line-height: 0; color: #999;">•</span> Export with PDF and SVG Text as Glyphs or CoreText Lines</li>
-                        <li><span style="font-size: 1.7rem; vertical-align: -3.5px; line-height: 0; color: #999;">•</span> Convert to outlines on PDF, SVG, PNG and AutoDesk SVG export</li>
-                        <li><span style="font-size: 1.7rem; vertical-align: -3.5px; line-height: 0; color: #999;">•</span> Default option to include .inkpen native JSON doc as Base64 within PDF and SVG Metadata</li>
-                        <li><span style="font-size: 1.7rem; vertical-align: -3.5px; line-height: 0; color: #999;">•</span> Allows non-destructive edits within InkPen</li>
-                        <li><span style="font-size: 1.7rem; vertical-align: -3.5px; line-height: 0; color: #999;">•</span> Save As with option key defaults to export PDF/SVG CoreText as lines</li>
-                        <li><span style="font-size: 1.7rem; vertical-align: -3.5px; line-height: 0; color: #999;">•</span> Automatically embeds InkPen JSON</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="release-table" style="margin-bottom: 2rem;">
-                <h3>RELEASE NOTES 1.0b16</h3>
-                <div style="padding: 1rem; text-align: left;">
-                    <ul style="list-style: none; padding-left: 0; line-height: 1.8; font-size: 0.85rem; color: #000; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;">
-                        <li><span style="font-size: 1.7rem; vertical-align: -3.5px; line-height: 0; color: #999;">•</span> Improve pressure sensitivity for Brush and Marker tools</li>
-                        <li><span style="font-size: 1.7rem; vertical-align: -3.5px; line-height: 0; color: #999;">•</span> Added Pressure sensitive curve to preferences</li>
-                        <li><span style="font-size: 1.7rem; vertical-align: -3.5px; line-height: 0; color: #999;">•</span> Added Centroid centers to Scale, Rotate and Shear tools</li>
-                        <li><span style="font-size: 1.7rem; vertical-align: -3.5px; line-height: 0; color: #999;">•</span> Brush and Marker tools save their least used settings</li>
-                        <li><span style="font-size: 1.7rem; vertical-align: -3.5px; line-height: 0; color: #999;">•</span> Fixed a bug when opening SVG's where paths that should be closed where not</li>
-                        <li><span style="font-size: 1.7rem; vertical-align: -3.5px; line-height: 0; color: #999;">•</span> Added text to outlines to PNG and Autodesk 96dpi SVG</li>
                     </ul>
                 </div>
             </div>
@@ -749,116 +732,6 @@
                                 <div class="hash-cell">
                                     <span class="hash-truncated" data-full-hash="4984714f686408b8da0cd71879bf0da392a8ed93e1328b4c8eecac04ef98591f" title="4984714f686408b8da0cd71879bf0da392a8ed93e1328b4c8eecac04ef98591f">4984714f686408b8da0cd71879bf0da392a8ed93e1328b4c8eecac04ef98591f</span>
                                     <button class="copy-button" onclick="navigator.clipboard.writeText('4984714f686408b8da0cd71879bf0da392a8ed93e1328b4c8eecac04ef98591f').then(() => { this.style.fontSize = '0.8rem'; this.innerHTML = '✓'; setTimeout(() => { this.style.fontSize = '1rem'; this.innerHTML = '⧉'; }, 2000); })">⧉</button>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><a href="https://github.com/SuperBox64/InkPen.IO/releases/download/1.0-MVP-Beta-Feedback-Wanted/logos.inkpen.io-1.0b25.zip" style="text-decoration: none;"><span class="version-badge">1.0b25</span></a></td>
-                            <td>October 12, 2025</td>
-                            <td>5.78 MB</td>
-                            <td>
-                                <div class="hash-cell">
-                                    <span class="hash-truncated" data-full-hash="5e79cc469cc1125585424ff5120ddc5bbb91e1e13f4f68f74d1ed5bd8132bfe3" title="5e79cc469cc1125585424ff5120ddc5bbb91e1e13f4f68f74d1ed5bd8132bfe3">5e79cc469cc1125585424ff5120ddc5bbb91e1e13f4f68f74d1ed5bd8132bfe3</span>
-                                    <button class="copy-button" onclick="navigator.clipboard.writeText('5e79cc469cc1125585424ff5120ddc5bbb91e1e13f4f68f74d1ed5bd8132bfe3').then(() => { this.style.fontSize = '0.8rem'; this.innerHTML = '✓'; setTimeout(() => { this.style.fontSize = '1rem'; this.innerHTML = '⧉'; }, 2000); })">⧉</button>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><a href="https://github.com/SuperBox64/InkPen.IO/releases/download/1.0-MVP-Beta-Feedback-Wanted/logos.inkpen.io-1.0b23.zip" style="text-decoration: none;"><span class="version-badge">1.0b23</span></a></td>
-                            <td>October 11, 2025</td>
-                            <td>5.75 MB</td>
-                            <td>
-                                <div class="hash-cell">
-                                    <span class="hash-truncated" data-full-hash="ce4e222e0a166b6f5c812b1206eb60f2fd86efc9f7def4e768a0478750444100" title="ce4e222e0a166b6f5c812b1206eb60f2fd86efc9f7def4e768a0478750444100">ce4e222e0a166b6f5c812b1206eb60f2fd86efc9f7def4e768a0478750444100</span>
-                                    <button class="copy-button" onclick="navigator.clipboard.writeText('ce4e222e0a166b6f5c812b1206eb60f2fd86efc9f7def4e768a0478750444100').then(() => { this.style.fontSize = '0.8rem'; this.innerHTML = '✓'; setTimeout(() => { this.style.fontSize = '1rem'; this.innerHTML = '⧉'; }, 2000); })">⧉</button>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><a href="https://github.com/SuperBox64/InkPen.IO/releases/download/1.0-MVP-Beta-Feedback-Wanted/logos.inkpen.io-1.0b22.zip" style="text-decoration: none;"><span class="version-badge">1.0b22</span></a></td>
-                            <td>October 9, 2025</td>
-                            <td>5.71 MB</td>
-                            <td>
-                                <div class="hash-cell">
-                                    <span class="hash-truncated" data-full-hash="4de126c2739c0f25770d1e1debeef2f58488e4b488be4a5cc280afe0cb759a56" title="4de126c2739c0f25770d1e1debeef2f58488e4b488be4a5cc280afe0cb759a56">4de126c2739c0f25770d1e1debeef2f58488e4b488be4a5cc280afe0cb759a56</span>
-                                    <button class="copy-button" onclick="navigator.clipboard.writeText('4de126c2739c0f25770d1e1debeef2f58488e4b488be4a5cc280afe0cb759a56').then(() => { this.style.fontSize = '0.8rem'; this.innerHTML = '✓'; setTimeout(() => { this.style.fontSize = '1rem'; this.innerHTML = '⧉'; }, 2000); })">⧉</button>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><a href="https://github.com/SuperBox64/InkPen.IO/releases/download/1.0-MVP-Beta-Feedback-Wanted/logos.inkpen.io-1.0b20.zip" style="text-decoration: none;"><span class="version-badge">1.0b20</span></a></td>
-                            <td>October 6, 2025</td>
-                            <td>5.59 MB</td>
-                            <td>
-                                <div class="hash-cell">
-                                    <span class="hash-truncated" data-full-hash="e04cbf77c9b4246226f636bcb152c51a255822199e485847bda952fe11cf98a2" title="e04cbf77c9b4246226f636bcb152c51a255822199e485847bda952fe11cf98a2">e04cbf77c9b4246226f636bcb152c51a255822199e485847bda952fe11cf98a2</span>
-                                    <button class="copy-button" onclick="navigator.clipboard.writeText('e04cbf77c9b4246226f636bcb152c51a255822199e485847bda952fe11cf98a2').then(() => { this.style.fontSize = '0.8rem'; this.innerHTML = '✓'; setTimeout(() => { this.style.fontSize = '1rem'; this.innerHTML = '⧉'; }, 2000); })">⧉</button>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><a href="https://github.com/SuperBox64/InkPen.IO/releases/download/1.0-MVP-Beta-Feedback-Wanted/logos.inkpen.io-1.0b17.zip" style="text-decoration: none;"><span class="version-badge">1.0b17</span></a></td>
-                            <td>October 2, 2025</td>
-                            <td>5.73 MB</td>
-                            <td>
-                                <div class="hash-cell">
-                                    <span class="hash-truncated" data-full-hash="2fc348f77bf9a0589fb604f48dcbf3f2c076cea8e19d3df1a5769d00dac6e9b4" title="2fc348f77bf9a0589fb604f48dcbf3f2c076cea8e19d3df1a5769d00dac6e9b4">2fc348f77bf9a0589fb604f48dcbf3f2c076cea8e19d3df1a5769d00dac6e9b4</span>
-                                    <button class="copy-button" onclick="navigator.clipboard.writeText('2fc348f77bf9a0589fb604f48dcbf3f2c076cea8e19d3df1a5769d00dac6e9b4').then(() => { this.style.fontSize = '0.8rem'; this.innerHTML = '✓'; setTimeout(() => { this.style.fontSize = '1rem'; this.innerHTML = '⧉'; }, 2000); })">⧉</button>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><a href="https://github.com/SuperBox64/InkPen.IO/releases/download/1.0-MVP-Beta-Feedback-Wanted/logos.inkpen.io-1.0b16.zip" style="text-decoration: none;"><span class="version-badge">1.0b16</span></a></td>
-                            <td>September 30, 2025</td>
-                            <td>5.68 MB</td>
-                            <td>
-                                <div class="hash-cell">
-                                    <span class="hash-truncated" data-full-hash="3d879923ffe758039d9e23539165c7ba123f3bc2395eaec1d1809916a2349251" title="3d879923ffe758039d9e23539165c7ba123f3bc2395eaec1d1809916a2349251">3d879923ffe758039d9e23539165c7ba123f3bc2395eaec1d1809916a2349251</span>
-                                    <button class="copy-button" onclick="navigator.clipboard.writeText('3d879923ffe758039d9e23539165c7ba123f3bc2395eaec1d1809916a2349251').then(() => { this.style.fontSize = '0.8rem'; this.innerHTML = '✓'; setTimeout(() => { this.style.fontSize = '1rem'; this.innerHTML = '⧉'; }, 2000); })">⧉</button>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><a href="https://github.com/SuperBox64/InkPen.IO/releases/download/1.0-MVP-Beta-Feedback-Wanted/logos.inkpen.io-1.0b14.zip" style="text-decoration: none;"><span class="version-badge">1.0b14</span></a></td>
-                            <td>September 29, 2025</td>
-                            <td>5.64 MB</td>
-                            <td>
-                                <div class="hash-cell">
-                                    <span class="hash-truncated" data-full-hash="22ebb7fc6a150639f7cb0f1c201d08f0e2b6e6815438c724df5a7e0f04baa490" title="22ebb7fc6a150639f7cb0f1c201d08f0e2b6e6815438c724df5a7e0f04baa490">22ebb7fc6a150639f7cb0f1c201d08f0e2b6e6815438c724df5a7e0f04baa490</span>
-                                    <button class="copy-button" onclick="navigator.clipboard.writeText('22ebb7fc6a150639f7cb0f1c201d08f0e2b6e6815438c724df5a7e0f04baa490').then(() => { this.style.fontSize = '0.8rem'; this.innerHTML = '✓'; setTimeout(() => { this.style.fontSize = '1rem'; this.innerHTML = '⧉'; }, 2000); })">⧉</button>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><a href="https://github.com/SuperBox64/InkPen.IO/releases/download/1.0-MVP-Beta-Feedback-Wanted/logos.inkpen.io-1.0b13.zip" style="text-decoration: none;"><span class="version-badge">1.0b13</span></a></td>
-                            <td>September 28, 2025</td>
-                            <td>5.71 MB</td>
-                            <td>
-                                <div class="hash-cell">
-                                    <span class="hash-truncated" data-full-hash="52640bcf5e529b1399782817cb67b223453bb67e9bde9975af9ee4772543a3f8" title="52640bcf5e529b1399782817cb67b223453bb67e9bde9975af9ee4772543a3f8">52640bcf5e529b1399782817cb67b223453bb67e9bde9975af9ee4772543a3f8</span>
-                                    <button class="copy-button" onclick="navigator.clipboard.writeText('52640bcf5e529b1399782817cb67b223453bb67e9bde9975af9ee4772543a3f8').then(() => { this.style.fontSize = '0.8rem'; this.innerHTML = '✓'; setTimeout(() => { this.style.fontSize = '1rem'; this.innerHTML = '⧉'; }, 2000); })">⧉</button>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><a href="https://github.com/SuperBox64/InkPen.IO/releases/download/1.0-MVP-Beta-Feedback-Wanted/logos.inkpen.io-1.0b12.zip" style="text-decoration: none;"><span class="version-badge">1.0b12</span></a></td>
-                            <td>September 27, 2025</td>
-                            <td>5.81 MB</td>
-                            <td>
-                                <div class="hash-cell">
-                                    <span class="hash-truncated" data-full-hash="39868ee51e84445b64df260e48c8f3860dbea15b69c439194641c355c09161b5" title="39868ee51e84445b64df260e48c8f3860dbea15b69c439194641c355c09161b5">39868ee51e84445b64df260e48c8f3860dbea15b69c439194641c355c09161b5</span>
-                                    <button class="copy-button" onclick="navigator.clipboard.writeText('39868ee51e84445b64df260e48c8f3860dbea15b69c439194641c355c09161b5').then(() => { this.style.fontSize = '0.8rem'; this.innerHTML = '✓'; setTimeout(() => { this.style.fontSize = '1rem'; this.innerHTML = '⧉'; }, 2000); })">⧉</button>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><a href="https://github.com/SuperBox64/InkPen.IO/releases/download/1.0-MVP-Beta-Feedback-Wanted/logos.inkpen.io-1.0b9.zip" style="text-decoration: none;"><span class="version-badge">1.0b9</span></a></td>
-                            <td>September 26, 2025</td>
-                            <td>5.78 MB</td>
-                            <td>
-                                <div class="hash-cell">
-                                    <span class="hash-truncated" data-full-hash="6e9e7ee5e598c9e558f595f791f69cb5f8e4fe555980a66bdbf9586b1f0b82ad" title="6e9e7ee5e598c9e558f595f791f69cb5f8e4fe555980a66bdbf9586b1f0b82ad">6e9e7ee5e598c9e558f595f791f69cb5f8e4fe555980a66bdbf9586b1f0b82ad</span>
-                                    <button class="copy-button" onclick="navigator.clipboard.writeText('6e9e7ee5e598c9e558f595f791f69cb5f8e4fe555980a66bdbf9586b1f0b82ad').then(() => { this.style.fontSize = '0.8rem'; this.innerHTML = '✓'; setTimeout(() => { this.style.fontSize = '1rem'; this.innerHTML = '⧉'; }, 2000); })">⧉</button>
                                 </div>
                             </td>
                         </tr>
