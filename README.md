@@ -11,4 +11,4 @@ InkPen Website
 - Speed improvements
 - New layer panel
 
-**Note:** This is the first of two Second Sunday betas coming before the official release. This software is not final and may contain new bugs
+**Note:** This is the first of three Second Sunday betas coming before the official release. This software is not final and may contain new bugs
