@@ -20,7 +20,8 @@
       "mcp__xcf-server__create_doc",
       "mcp__xcf-server__run_project",
       "mcp__xcf-server__snippet",
-      "Bash(open:*)"
+      "Bash(open:*)",
+      "Bash(git show:*)"
     ],
     "deny": [],
     "ask": []
