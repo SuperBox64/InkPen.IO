@@ -11,5 +11,6 @@ InkPen Website
 - Autodesk 96dpi SVG export
 - Rename items in Layers panel
 - Several other bug fixes
+- TestFlight version is waiting for review
 
 **Note:** This is the second of three Second Sunday betas coming before the official release. This software is not final and may contain new bugs.
