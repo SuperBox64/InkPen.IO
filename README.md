@@ -11,6 +11,6 @@ InkPen Website
 - Autodesk 96dpi SVG export
 - Rename items in Layers panel
 - Several other bug fixes
-- Apple App Store version is ready for download via TestFlight
+- Apple App Store version is ready for download via [TestFlight](https://testflight.apple.com/join/DD8BPpga)
 
 **Note:** This is the second of three Third Sunday betas coming before the official release. This software is not final and may contain new bugs.
