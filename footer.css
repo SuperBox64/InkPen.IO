@@ -33,6 +33,7 @@ footer .footer-content {
 footer .footer-content div {
     color: #fff;
     text-align: center;
+    flex: 1;
 }
 
 footer .footer-content a {
