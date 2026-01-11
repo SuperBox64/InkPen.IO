@@ -21,7 +21,8 @@
       "mcp__xcf-server__run_project",
       "mcp__xcf-server__snippet",
       "Bash(open:*)",
-      "Bash(git show:*)"
+      "Bash(git show:*)",
+      "mcp__xcf-server__open_doc"
     ],
     "deny": [],
     "ask": []
