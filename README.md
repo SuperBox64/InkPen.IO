@@ -19,7 +19,10 @@ InkPen Website
   - Align Horizontal + Vertical
   - Align Horizontal
   - Align Vertical
-- Autodesk 96dpi SVG export
+- Autodesk native export
+  - SVG exports at 96dpi
+  - SVG imports at 100%
+  - Native InkPen doc is automatically embedded
 - Rename items in Layers panel
 - Several other bug fixes
 - Apple App Store version is ready for download via [TestFlight](https://testflight.apple.com/join/DD8BPpga)
