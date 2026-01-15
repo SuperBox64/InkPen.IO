@@ -9,7 +9,7 @@ InkPen Website
 **What's New:**
 - New cmd + click to select behind using arrow tool
 - New option + click to select behind using direct select tool
-- Ability to nudge points using arrow keys 1x grid size, option + arrow keys 1/10th grid size, shift + arrow keys 10x grid size
+- Ability to nudge points using arrow keys: 1x grid size (arrow keys only), 0.1x grid size (option + arrow keys), 10x grid size (shift + arrow keys)
 - Align tool added by anchor points
 - Autodesk 96dpi SVG export
 - Rename items in Layers panel
