@@ -7,8 +7,9 @@ InkPen Website
 **Download:** [logos.inkpen.io-1.0b29.zip](https://github.com/SuperBox64/InkPen.IO/releases/download/1.0-MVP-Beta-Feedback-Wanted/logos.inkpen.io-1.0b29.zip)
 
 **What's New:**
-- New cmd + click to select behind using arrow tool
-- New option + click to select behind using direct select tool
+- New select behind feature
+  - Cmd + click with arrow tool
+  - Option + click with direct select tool
 - Ability to nudge points using arrow keys
   - 1x grid size (arrow keys only)
   - 0.1x grid size (option + arrow keys)
