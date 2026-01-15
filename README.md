@@ -24,7 +24,8 @@ InkPen Website
   - SVG imports at 100%
   - Native InkPen doc is automatically embedded
 - Rename items in Layers panel
-- Several other bug fixes
-- Apple App Store version is ready for download via [TestFlight](https://testflight.apple.com/join/DD8BPpga)
+  - Groups
+  - Paths
+  - Objects
 
 **Note:** This is the second of three Third Sunday betas coming before the official release. This software is not final and may contain new bugs.
