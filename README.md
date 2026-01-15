@@ -14,7 +14,11 @@ InkPen Website
   - 1x grid size (arrow keys only)
   - 0.1x grid size (option + arrow keys)
   - 10x grid size (shift + arrow keys)
-- Align tool added by anchor points
+- New Align tool
+  - Aligns by anchor points for each object
+  - Align Horizontal + Vertical
+  - Align Horizontal
+  - Align Vertical
 - Autodesk 96dpi SVG export
 - Rename items in Layers panel
 - Several other bug fixes
