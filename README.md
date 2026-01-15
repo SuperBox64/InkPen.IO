@@ -10,6 +10,10 @@ InkPen Website
 - New cmd + click to select behind using arrow tool
 - New option + click to select behind using direct select tool
 - Ability to nudge points using arrow keys 1x grid size, option + arrow keys 1/10th grid size, shift + arrow keys 10x grid size
+- Align tool added by anchor points
+- Autodesk 96dpi SVG export
+- Rename items in Layers panel
+- Several other bug fixes
 - Apple App Store version is ready for download via [TestFlight](https://testflight.apple.com/join/DD8BPpga)
 
 **Note:** This is the second of three Third Sunday betas coming before the official release. This software is not final and may contain new bugs.
