@@ -34,7 +34,7 @@
         <div class="banner-nav">
             <a href="${homeLink}">Home</a>
             <a href="https://chat.xcf.ai" target="_blank">Chat</a>
-            <a href="${docsLink}" class="hide-mobile">Docs</a>
+            <a href="${docsLink}">Docs</a>
             <a href="${statsLink}">Stat</a>
             <a href="https://superbox64.com" target="_blank">SBOX</a>
         </div>

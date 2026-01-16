@@ -13,7 +13,7 @@
             <div class="footer-content">
                 <div><a href="${homeLink}" style="color: inherit;">Home</a></div>
                 <div><a href="https://chat.xcf.ai" target="_blank" style="color: inherit;">Chat</a></div>
-                <div class="hide-mobile"><a href="${docsLink}">Docs</a></div>
+                <div><a href="${docsLink}">Docs</a></div>
                 <div><a href="${statsLink}" onclick="this.href='${statsLink}?v='+Date.now()" style="color: inherit;">Stat</a></div>
                 <div><a href="https://superbox64.com" target="_blank" style="color: inherit;">sBox</a></div>
                 <div class="year-tooltip">2026
