@@ -25,6 +25,11 @@
             </div>
             <div class="countdown-sponsor">Sponsor <a href="https://superbox64.com" target="_blank">SuperBox64.com</a> Retro Arcade Boxes</div>
         </div>
+        <div class="banner-nav">
+            <a href="https://chat.xcf.ai" target="_blank">Chat</a>
+            <a href="help/index.html">Docs</a>
+            <a href="ip-stats.html">Stats</a>
+        </div>
     </div>`;
 
     // Insert banner CSS
@@ -33,9 +38,8 @@
         background-color: #000;
         color: #fff;
         text-align: center;
-        padding: 2px 0;
+        padding: 2px 0 0 0;
         font-family: 'Courier New', Courier, monospace;
-        border-bottom: 2px solid #333;
         position: sticky;
         top: 0;
         z-index: 1000;
@@ -108,6 +112,26 @@
     }
     .countdown-sponsor a:hover {
         text-decoration: underline;
+    }
+    .banner-nav {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 4px;
+        padding: 6px 0;
+        background-color: #444;
+    }
+    .banner-nav a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 0.75rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.15em;
+        font-family: 'Orbitron', monospace;
+    }
+    .banner-nav a:hover {
+        color: #fff;
     }
     @media (max-width: 768px) {
         .countdown-timer {
