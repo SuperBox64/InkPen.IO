@@ -1,5 +1,5 @@
-// Cache Buster Version - Change this in one place
-const CACHE_VERSION = '1.0b29';
+// Cache Buster Version - Uses epoch timestamp
+const CACHE_VERSION = Date.now();
 
 // Apply cache buster to stylesheets immediately (before DOMContentLoaded)
 // This prevents flash of unstyled content
