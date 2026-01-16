@@ -35,7 +35,8 @@
             <a href="${homeLink}">Home</a>
             <a href="https://chat.xcf.ai" target="_blank">Chat</a>
             <a href="${docsLink}">Docs</a>
-            <a href="${statsLink}">Stats</a>
+            <a href="${statsLink}">Stat</a>
+            <a href="https://superbox64.com" target="_blank">SBOX</a>
         </div>
     </div>`;
 
@@ -123,7 +124,7 @@
     .banner-nav {
         display: flex;
         justify-content: center;
-        gap: 30px;
+        gap: 31px;
         margin-top: 4px;
         padding: 6px 0;
         background-color: #666;
