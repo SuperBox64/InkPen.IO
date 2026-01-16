@@ -329,6 +329,24 @@ body {
         padding: 10px 8px;
         font-size: 0.8rem;
     }
+
+    .build-name {
+        min-width: 75px;
+        max-width: 75px;
+        width: 75px;
+    }
+
+    .download-count {
+        min-width: 110px;
+        max-width: 110px;
+        width: 110px;
+    }
+
+    .file-size {
+        min-width: 75px;
+        max-width: 75px;
+        width: 75px;
+    }
 }
 
 /* Hide 3rd and 4th stat cards below 600px */
