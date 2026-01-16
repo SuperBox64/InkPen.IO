@@ -10,7 +10,7 @@
     const bannerHTML = `
     <div class="countdown-banner">
         <div class="countdown-banner-content">
-            <div class="countdown-label">INKPEN BETA RELEASE 1.0 BUILD 30</div>
+            <div class="countdown-label">INKPEN <span class="hide-mobile">BETA </span>RELEASE 1.0 BUILD 30</div>
             <div class="countdown-timer" id="countdown">
                 <span class="countdown-segment">
                     <span class="countdown-number" id="days">00</span>
