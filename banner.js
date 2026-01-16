@@ -10,7 +10,7 @@
     const bannerHTML = `
     <div class="countdown-banner">
         <div class="countdown-banner-content">
-            <div class="countdown-label">INKPEN <span class="hide-mobile">BETA </span>RELEASE 1.0 BUILD 30</div>
+            <div class="countdown-label">INKPEN <span class="hide-mobile">BETA </span>RELEASE 1.0 <span class="hide-mobile">BUILD</span><span class="show-mobile">BETA</span> 30</div>
             <div class="countdown-timer" id="countdown">
                 <span class="countdown-segment">
                     <span class="countdown-number" id="days">00</span>
@@ -165,11 +165,19 @@
         .hide-mobile {
             display: none;
         }
+        .show-mobile {
+            display: inline;
+        }
+    }`;
+
+    const desktopCSS = `
+    .show-mobile {
+        display: none;
     }`;
 
     // Insert CSS
     const style = document.createElement('style');
-    style.textContent = bannerCSS;
+    style.textContent = bannerCSS + desktopCSS;
     document.head.appendChild(style);
 
     // Insert HTML at start of body
