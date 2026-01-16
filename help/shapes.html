@@ -2,322 +2,94 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Creating Shapes - Logos InkPen Help</title>
     <meta name="description" content="Guide to creating and editing shapes in Logos InkPen">
     <meta name="keywords" content="shapes, rectangle, circle, polygon, star, drawing">
-    <link data-cache-bust="style.css" rel="stylesheet" type="text/css">
-    <link data-cache-bust="../footer.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&display=swap" rel="stylesheet">
     <script>document.write('<script src="../version.js?v='+Date.now()+'"><\/script>');</script>
 </head>
 <body>
-    <div class="content">
+    <script src="../banner.js"></script>
+    <div class="banner">
         <h1>Creating Shapes</h1>
+    </div>
 
-        <p>Logos InkPen provides a comprehensive set of shape tools for creating geometric objects. Each shape tool has unique properties and modifiers for precise control.</p>
+    <div class="content">
+        <p>Logos InkPen provides a comprehensive set of shape tools for creating geometric objects.</p>
 
         <h2>Basic Shape Creation</h2>
-
-        <h3>Drawing Shapes</h3>
         <ol class="step-list">
-            <li>Select a shape tool from the vertical toolbar</li>
-            <li>Click and drag on the canvas to create the shape</li>
-            <li>Release the mouse to complete the shape</li>
-            <li>The shape adopts current fill and stroke settings</li>
+            <li>Select a shape tool from the toolbar</li>
+            <li>Click and drag on the canvas</li>
+            <li>Release to complete the shape</li>
         </ol>
 
-        <h3>Shape Modifiers While Drawing</h3>
+        <h3>Shape Modifiers</h3>
         <ul>
-            <li><strong>Shift:</strong> Constrain proportions (creates squares from rectangles, circles from ellipses)</li>
-            <li><strong>Option (⌥):</strong> Draw from center outward instead of corner to corner</li>
-            <li><strong>Shift + Option:</strong> Constrained shape from center</li>
-            <li><strong>Space:</strong> Reposition shape while drawing (hold and drag)</li>
+            <li><strong>Shift:</strong> Constrain proportions</li>
+            <li><strong>Option (⌥):</strong> Draw from center</li>
+            <li><strong>Space:</strong> Reposition while drawing</li>
         </ul>
 
         <h2>Rectangle Shapes</h2>
-
-        <h3>Rectangle Tool (⌥R)</h3>
-        <p>Creates rectangular shapes with independent width and height.</p>
         <ul>
-            <li>Drag diagonally to define opposite corners</li>
-            <li>Click once to enter exact dimensions</li>
-            <li>Corner radius can be adjusted after creation</li>
-        </ul>
-
-        <h3>Square Tool (⌥S)</h3>
-        <p>Creates perfect squares without needing to hold Shift.</p>
-        <ul>
-            <li>Automatically constrains to equal width and height</li>
-            <li>Diagonal drag distance determines size</li>
-            <li>Ideal for icons and grid-based designs</li>
-        </ul>
-
-        <h3>Rounded Rectangle Tool (⇧⌥R)</h3>
-        <p>Creates rectangles with pre-set rounded corners.</p>
-        <ul>
-            <li>Default corner radius: 10pt</li>
-            <li>Adjust radius in properties panel</li>
-            <li>Each corner can be adjusted independently</li>
-            <li>Perfect for buttons and UI elements</li>
-        </ul>
-
-        <h3>Pill Tool (⇧⌥P)</h3>
-        <p>Creates stadium/capsule shapes with fully rounded ends.</p>
-        <ul>
-            <li>Corner radius automatically set to half the height</li>
-            <li>Cannot adjust corner radius (always maximum)</li>
-            <li>Great for tags, badges, and pill buttons</li>
+            <li><strong>Rectangle (⌥R):</strong> Variable width and height</li>
+            <li><strong>Square (⌥S):</strong> Equal sides</li>
+            <li><strong>Rounded Rectangle (⇧⌥R):</strong> With corner radius</li>
+            <li><strong>Pill (⇧⌥P):</strong> Fully rounded ends</li>
         </ul>
 
         <h2>Circular Shapes</h2>
-
-        <h3>Circle Tool (⌥C)</h3>
-        <p>Creates perfect circles without constraint keys.</p>
         <ul>
-            <li>Radius determined by drag distance</li>
-            <li>Hold Option to draw from center</li>
-            <li>Click to enter exact diameter</li>
-        </ul>
-
-        <h3>Ellipse Tool (E)</h3>
-        <p>Creates oval shapes with variable proportions.</p>
-        <ul>
-            <li>Width and height can differ</li>
-            <li>Hold Shift to constrain to circle</li>
-            <li>Useful for perspective circles and organic shapes</li>
-        </ul>
-
-        <h3>Oval Tool (O)</h3>
-        <p>Creates elongated ovals with specific aspect ratios.</p>
-        <ul>
-            <li>Optimized for common oval proportions</li>
-            <li>2:1 aspect ratio by default</li>
-            <li>Good for pills, race tracks, and badges</li>
-        </ul>
-
-        <h3>Egg Tool (⇧E)</h3>
-        <p>Creates egg-shaped objects with asymmetric curves.</p>
-        <ul>
-            <li>Wider at bottom, narrower at top</li>
-            <li>Natural organic appearance</li>
-            <li>Perfect for character bodies and natural forms</li>
-        </ul>
-
-        <h3>Cone Tool (⇧⌥C)</h3>
-        <p>Creates teardrop or cone shapes.</p>
-        <ul>
-            <li>Rounded base with pointed top</li>
-            <li>Adjust roundness with handles</li>
-            <li>Ideal for location pins and droplets</li>
+            <li><strong>Circle (⌥C):</strong> Perfect circles</li>
+            <li><strong>Ellipse (E):</strong> Ovals</li>
+            <li><strong>Egg (⇧E):</strong> Asymmetric ovals</li>
+            <li><strong>Cone (⇧⌥C):</strong> Teardrop shapes</li>
         </ul>
 
         <h2>Triangle Shapes</h2>
-
-        <h3>Equilateral Triangle (⇧T)</h3>
-        <p>All three sides equal length, 60° angles.</p>
         <ul>
-            <li>Perfect geometric triangle</li>
-            <li>Rotates from base by default</li>
-            <li>Hold Shift for point-up orientation</li>
+            <li><strong>Equilateral (⇧T):</strong> All sides equal</li>
+            <li><strong>Isosceles (I):</strong> Two equal sides</li>
+            <li><strong>Right Triangle:</strong> One 90° angle</li>
+            <li><strong>Acute (⇧A):</strong> All angles under 90°</li>
         </ul>
 
-        <h3>Isosceles Triangle (I)</h3>
-        <p>Two equal sides with symmetry.</p>
+        <h2>Polygons</h2>
         <ul>
-            <li>Adjust height independently of base</li>
-            <li>Creates arrows and directional indicators</li>
-            <li>Mirror-symmetric shape</li>
+            <li><strong>Pentagon (5):</strong> 5 sides</li>
+            <li><strong>Hexagon (6):</strong> 6 sides</li>
+            <li><strong>Heptagon (7):</strong> 7 sides</li>
+            <li><strong>Octagon (8):</strong> 8 sides</li>
+            <li><strong>Custom (⌥P):</strong> 3-100 sides</li>
         </ul>
 
-        <h3>Right Triangle (⇧⌥R)</h3>
-        <p>One 90-degree angle.</p>
-        <ul>
-            <li>Perfect for geometric constructions</li>
-            <li>Corner indicators and brackets</li>
-            <li>Pythagorean proportions available</li>
-        </ul>
-
-        <h3>Acute Triangle (⇧A)</h3>
-        <p>All angles less than 90 degrees.</p>
-        <ul>
-            <li>Sharp, pointed appearance</li>
-            <li>Dynamic and directional</li>
-            <li>Good for arrows and pointers</li>
-        </ul>
-
-        <h2>Polygon Shapes</h2>
-
-        <h3>Pentagon Tool (5)</h3>
-        <p>Regular 5-sided polygon.</p>
-        <ul>
-            <li>Home plate shape when rotated</li>
-            <li>Military insignia and badges</li>
-            <li>72° rotation between vertices</li>
-        </ul>
-
-        <h3>Hexagon Tool (6)</h3>
-        <p>Regular 6-sided polygon.</p>
-        <ul>
-            <li>Honeycomb and tile patterns</li>
-            <li>Efficient packing shape</li>
-            <li>60° rotation between vertices</li>
-        </ul>
-
-        <h3>Heptagon Tool (7)</h3>
-        <p>Regular 7-sided polygon.</p>
-        <ul>
-            <li>Unique and uncommon shape</li>
-            <li>Badge and coin designs</li>
-            <li>51.43° rotation between vertices</li>
-        </ul>
-
-        <h3>Octagon Tool (8)</h3>
-        <p>Regular 8-sided polygon.</p>
-        <ul>
-            <li>Stop sign shape</li>
-            <li>Classic floor tile pattern</li>
-            <li>45° rotation between vertices</li>
-        </ul>
-
-        <h3>Nonagon Tool (9)</h3>
-        <p>Regular 9-sided polygon.</p>
-        <ul>
-            <li>Complex geometric shape</li>
-            <li>Decorative and ornamental</li>
-            <li>40° rotation between vertices</li>
-        </ul>
-
-        <h3>Custom Polygon Tool (⌥P)</h3>
-        <p>Create polygons with 3-100 sides.</p>
-        <ul>
-            <li>Set number of sides before drawing</li>
-            <li>Automatic regular spacing</li>
-            <li>Can create near-circles with many sides</li>
-        </ul>
-
-        <h2>Star Shapes</h2>
-
-        <h3>Star Tool (⇧S)</h3>
-        <p>Creates star shapes with customizable points.</p>
-
-        <h4>Star Variants (Long-press to access)</h4>
-        <ul>
-            <li><strong>3-Point Star:</strong> Triangle-based star</li>
-            <li><strong>4-Point Star:</strong> Diamond/compass star</li>
-            <li><strong>5-Point Star:</strong> Classic star shape</li>
-            <li><strong>6-Point Star:</strong> Star of David style</li>
-            <li><strong>7-Point Star:</strong> Mystical/badge star</li>
-            <li><strong>8-Point Star:</strong> Starburst shape</li>
-            <li><strong>Custom Points:</strong> 3-100 points</li>
-        </ul>
-
-        <h4>Star Properties</h4>
-        <ul>
-            <li><strong>Outer Radius:</strong> Distance to points</li>
-            <li><strong>Inner Radius:</strong> Distance to valleys</li>
-            <li><strong>Ratio:</strong> Inner/outer relationship (0.3-0.9)</li>
-            <li><strong>Rotation:</strong> Starting angle of first point</li>
-        </ul>
+        <h2>Star Tool (⇧S)</h2>
+        <p>Create stars with customizable points (3-100) and adjustable inner/outer radius ratio.</p>
 
         <h2>Shape Editing</h2>
-
-        <h3>After Creating a Shape</h3>
         <ul>
-            <li><strong>Selection Tool (A):</strong> Move and transform entire shape</li>
-            <li><strong>Direct Selection (D):</strong> Edit individual points</li>
-            <li><strong>Corner Radius (⌃↑):</strong> Round rectangle corners</li>
-            <li><strong>Scale Tool (S):</strong> Resize proportionally or freely</li>
-            <li><strong>Rotate Tool (R):</strong> Rotate around center or custom point</li>
+            <li><strong>Selection (A):</strong> Move and transform</li>
+            <li><strong>Direct Selection (D):</strong> Edit points</li>
+            <li><strong>Corner Radius (⌃↑):</strong> Round corners</li>
+            <li><strong>Scale (S):</strong> Resize</li>
+            <li><strong>Rotate (R):</strong> Rotate</li>
         </ul>
 
-        <h3>Converting Shapes</h3>
+        <h2>Shape Properties</h2>
+        <p>Use Paint panel (⌘⇧P) to adjust:</p>
         <ul>
-            <li><strong>To Path:</strong> Convert shape to editable bezier path</li>
-            <li><strong>Expand:</strong> Convert stroke to filled shape</li>
-            <li><strong>Outline:</strong> Create path from shape outline</li>
-            <li><strong>Compound Path:</strong> Combine multiple shapes with holes</li>
+            <li>Fill color and opacity</li>
+            <li>Stroke width and style</li>
+            <li>Shadow effects</li>
+            <li>Blend modes</li>
         </ul>
-
-        <h3>Shape Properties Panel</h3>
-        <p>Access Paint panel (⌘⇧P) to adjust:</p>
-        <ul>
-            <li><strong>Fill:</strong> Interior color, gradient, or pattern</li>
-            <li><strong>Stroke:</strong> Outline width, color, and style</li>
-            <li><strong>Opacity:</strong> Transparency of fill and stroke</li>
-            <li><strong>Shadow:</strong> Drop shadow effects</li>
-            <li><strong>Blend Mode:</strong> How shape interacts with objects below</li>
-        </ul>
-
-        <h2>Precise Shape Creation</h2>
-
-        <h3>Numeric Input</h3>
-        <p>Click once with any shape tool to enter exact dimensions:</p>
-        <ul>
-            <li><strong>Width:</strong> Horizontal size in current units</li>
-            <li><strong>Height:</strong> Vertical size in current units</li>
-            <li><strong>Constrain:</strong> Lock aspect ratio</li>
-            <li><strong>From Center:</strong> Create from click point</li>
-        </ul>
-
-        <h3>Smart Guides</h3>
-        <p>Automatic alignment assistance while drawing:</p>
-        <ul>
-            <li>Snap to other objects' edges and centers</li>
-            <li>Show when dimensions match existing shapes</li>
-            <li>Indicate equal spacing between objects</li>
-            <li>Display measurement labels</li>
-        </ul>
-
-        <h3>Grid Snapping</h3>
-        <p>Enable grid (⌘') for precise placement:</p>
-        <ul>
-            <li>Shapes snap to grid intersections</li>
-            <li>Adjust grid spacing in preferences</li>
-            <li>Hold ⌘ to temporarily disable snapping</li>
-        </ul>
-
-        <h2>Shape Tips and Tricks</h2>
-
-        <div class="note">
-            <h4>Pro Tips</h4>
-            <ul>
-                <li>Double-click shape tools to set default properties</li>
-                <li>Option-drag existing shapes to duplicate</li>
-                <li>Use Transform Each to modify multiple shapes</li>
-                <li>Group similar shapes for easier management</li>
-                <li>Lock shapes to prevent accidental changes</li>
-                <li>Use layers to organize complex compositions</li>
-            </ul>
-        </div>
-
-        <h2>Common Shape Workflows</h2>
-
-        <h3>Creating Icons</h3>
-        <ol>
-            <li>Start with basic geometric shapes</li>
-            <li>Use boolean operations to combine</li>
-            <li>Apply consistent corner radius</li>
-            <li>Maintain stroke width throughout</li>
-        </ol>
-
-        <h3>Building Patterns</h3>
-        <ol>
-            <li>Create base shape</li>
-            <li>Duplicate with Option-drag</li>
-            <li>Use Distribute to space evenly</li>
-            <li>Group and duplicate pattern tile</li>
-        </ol>
-
-        <h3>Logo Construction</h3>
-        <ol>
-            <li>Build with simple shapes first</li>
-            <li>Refine with Direct Selection tool</li>
-            <li>Unite shapes for single color areas</li>
-            <li>Convert to outlines when complete</li>
-        </ol>
 
         <p><a href="index.html">← Back to Help Topics</a></p>
     </div>
-    <div id="footer-container"></div>
-    <script>document.write('<script src="common.js?v='+Date.now()+'"><\/script>');</script>
+
+    <script src="../footer.js"></script>
 </body>
 </html>

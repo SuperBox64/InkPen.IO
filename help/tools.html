@@ -2,18 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Drawing Tools - Logos InkPen Help</title>
     <meta name="description" content="Complete guide to all drawing and editing tools in Logos InkPen">
     <meta name="keywords" content="tools, selection, drawing, pen, shapes, text">
-    <link data-cache-bust="style.css" rel="stylesheet" type="text/css">
-    <link data-cache-bust="../footer.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&display=swap" rel="stylesheet">
     <script>document.write('<script src="../version.js?v='+Date.now()+'"><\/script>');</script>
 </head>
 <body>
-    <div class="content">
+    <script src="../banner.js"></script>
+    <div class="banner">
         <h1>Drawing Tools</h1>
+    </div>
 
-        <p>Logos InkPen provides a comprehensive set of professional drawing and editing tools. Access tools from the vertical toolbar on the left side of the window or use keyboard shortcuts for faster workflow.</p>
+    <div class="content">
+        <p>Logos InkPen provides a comprehensive set of professional drawing and editing tools. Access tools from the vertical toolbar on the left side of the window or use keyboard shortcuts.</p>
 
         <div class="note">
             <strong>Pro Tip:</strong> Hold Shift while drawing to constrain proportions. Hold Option to draw from center.
@@ -21,458 +25,120 @@
 
         <h2>Selection & Navigation Tools</h2>
 
-        <h3>Selection Tool</h3>
-        <table class="tool-info">
-            <tr><td>Shortcut</td><td><code>A</code></td></tr>
-            <tr><td>Icon</td><td>Arrow cursor</td></tr>
-        </table>
-        <p><strong>Purpose:</strong> The primary tool for selecting, moving, and transforming complete objects. This is your most-used tool for general editing.</p>
-        <p><strong>How to use:</strong></p>
+        <h3>Selection Tool (A)</h3>
+        <p>The primary tool for selecting, moving, and transforming complete objects.</p>
         <ul>
-            <li>Click on any object to select it - selection handles appear around the object</li>
-            <li>Drag an object to move it to a new position</li>
-            <li>Click and drag from empty space to create a marquee selection box</li>
-            <li>Hold Shift and click to add or remove objects from selection</li>
-            <li>Double-click to enter isolation mode for groups</li>
-            <li>Drag corner handles to resize selected objects</li>
+            <li>Click on any object to select it</li>
+            <li>Drag to move objects</li>
+            <li>Click and drag from empty space for marquee selection</li>
+            <li>Hold Shift to add/remove from selection</li>
+            <li>Double-click for isolation mode</li>
         </ul>
-        <p><strong>Best for:</strong> General object manipulation, arranging layouts, selecting multiple objects for group operations.</p>
 
-        <h3>Direct Selection Tool</h3>
-        <table class="tool-info">
-            <tr><td>Shortcut</td><td><code>D</code></td></tr>
-            <tr><td>Icon</td><td>White arrow</td></tr>
-        </table>
-        <p><strong>Purpose:</strong> Fine-tune the shape of paths by manipulating individual anchor points and bezier handles. Essential for precise path editing.</p>
-        <p><strong>How to use:</strong></p>
+        <h3>Direct Selection Tool (D)</h3>
+        <p>Fine-tune shapes by manipulating individual anchor points and bezier handles.</p>
         <ul>
-            <li>Click on a path to reveal all anchor points</li>
-            <li>Click and drag an anchor point to move it</li>
-            <li>Click a point to select it, then drag the bezier handles to adjust curves</li>
-            <li>Shift-click to select multiple anchor points</li>
-            <li>Drag a path segment between points to reshape the curve</li>
+            <li>Click on a path to reveal anchor points</li>
+            <li>Drag anchor points to reshape</li>
+            <li>Adjust bezier handles for curves</li>
+            <li>Shift-click to select multiple points</li>
         </ul>
-        <p><strong>Best for:</strong> Refining logos, adjusting letterforms, perfecting curves, fixing path problems.</p>
 
-        <h3>Hand Tool</h3>
-        <table class="tool-info">
-            <tr><td>Shortcut</td><td><code>H</code> or hold <code>Space</code></td></tr>
-            <tr><td>Icon</td><td>Hand</td></tr>
-        </table>
-        <p>Pan around the canvas without changing the zoom level. Hold Space bar for temporary hand tool while using any other tool.</p>
+        <h3>Hand Tool (H or Space)</h3>
+        <p>Pan around the canvas. Hold Space for temporary hand tool while using other tools.</p>
 
-        <h3>Zoom Tool</h3>
-        <table class="tool-info">
-            <tr><td>Shortcut</td><td><code>Z</code></td></tr>
-            <tr><td>Icon</td><td>Magnifying glass</td></tr>
-            <tr><td>Zoom In</td><td><code>⌘+</code></td></tr>
-            <tr><td>Zoom Out</td><td><code>⌘-</code></td></tr>
-            <tr><td>Fit to Page</td><td><code>⌘0</code></td></tr>
-            <tr><td>Actual Size</td><td><code>⌘1</code></td></tr>
-        </table>
-        <p>Click to zoom in, Option-click to zoom out. Drag to zoom to a specific area.</p>
+        <h3>Zoom Tool (Z)</h3>
+        <p>Click to zoom in, Option-click to zoom out. Use ⌘+ / ⌘- for quick zoom.</p>
 
         <h2>Path Drawing Tools</h2>
 
-        <h3>Bezier Pen Tool</h3>
-        <table class="tool-info">
-            <tr><td>Shortcut</td><td><code>P</code></td></tr>
-            <tr><td>Icon</td><td>Pen nib</td></tr>
-        </table>
-        <p><strong>Purpose:</strong> The professional's choice for creating precise vector paths. Essential for logo design, custom lettering, and technical illustration.</p>
-        <p><strong>How to use:</strong></p>
+        <h3>Bezier Pen Tool (P)</h3>
+        <p>Create precise vector paths for logos, custom lettering, and technical illustration.</p>
         <ul>
-            <li><strong>Corner points:</strong> Click once to place a sharp corner point</li>
-            <li><strong>Smooth curves:</strong> Click and drag to pull out bezier handles that define the curve</li>
-            <li><strong>Continue path:</strong> Keep clicking to add more points to your path</li>
-            <li><strong>Close path:</strong> Click on the first point to create a closed shape</li>
-            <li><strong>End path:</strong> Press Escape or switch tools to finish an open path</li>
-            <li><strong>Convert points:</strong> Hold Option and click a smooth point to convert to corner</li>
+            <li>Click for corner points</li>
+            <li>Click and drag for smooth curves</li>
+            <li>Click first point to close path</li>
+            <li>Escape to end open path</li>
         </ul>
-        <p><strong>Pro tips:</strong></p>
-        <ul>
-            <li>Use as few points as possible for smoother curves</li>
-            <li>Place points at the extremes of curves (top, bottom, leftmost, rightmost)</li>
-            <li>Pull handles in the direction of the curve for natural flow</li>
-        </ul>
-        <p><strong>Best for:</strong> Logo creation, custom typography, technical drawings, tracing artwork.</p>
 
-        <h3>Freehand Tool</h3>
-        <table class="tool-info">
-            <tr><td>Shortcut</td><td><code>F</code></td></tr>
-            <tr><td>Icon</td><td>Scribble</td></tr>
-        </table>
-        <p><strong>Purpose:</strong> Quick sketching and organic drawing. Perfect for initial concept work and natural, flowing shapes.</p>
-        <p><strong>How to use:</strong></p>
-        <ul>
-            <li>Click and drag to draw freeform paths</li>
-            <li>Release to complete the path - it automatically smooths</li>
-            <li>Adjust smoothing amount in properties before drawing</li>
-            <li>Draw slowly for more accurate paths</li>
-            <li>Draw quickly for more gestural, loose strokes</li>
-        </ul>
-        <p><strong>Best for:</strong> Quick sketches, organic shapes, handwritten signatures, concept drawings, natural elements like leaves or clouds.</p>
+        <h3>Freehand Tool (F)</h3>
+        <p>Quick sketching with automatic smoothing. Draw naturally with mouse or tablet.</p>
 
-        <h3>Brush Tool</h3>
-        <table class="tool-info">
-            <tr><td>Shortcut</td><td><code>B</code></td></tr>
-            <tr><td>Icon</td><td>Variable scribble</td></tr>
-        </table>
-        <p><strong>Purpose:</strong> Create artistic strokes with variable width. Simulates traditional brush techniques digitally, with full pressure sensitivity support.</p>
-        <p><strong>How to use:</strong></p>
-        <ul>
-            <li>Select brush size and smoothness in the properties panel</li>
-            <li>Draw with mouse or stylus - pressure affects stroke width (with tablet)</li>
-            <li>Lighter pressure creates thin strokes, heavier creates thick strokes</li>
-            <li>Overlap strokes to build up artistic effects</li>
-            <li>Use with opacity settings for watercolor-like effects</li>
-        </ul>
-        <p><strong>Settings:</strong></p>
-        <ul>
-            <li><strong>Size:</strong> Base width of the brush stroke</li>
-            <li><strong>Smoothness:</strong> How much the stroke is refined after drawing</li>
-            <li><strong>Pressure:</strong> Sensitivity to tablet pressure (if available)</li>
-        </ul>
-        <p><strong>Best for:</strong> Illustrations, calligraphy, artistic logos, hand-lettering, expressive drawings.</p>
+        <h3>Brush Tool (B)</h3>
+        <p>Create artistic strokes with variable width. Supports pressure sensitivity.</p>
 
-        <h3>Marker Tool</h3>
-        <table class="tool-info">
-            <tr><td>Shortcut</td><td><code>M</code></td></tr>
-            <tr><td>Icon</td><td>Pencil tip</td></tr>
-        </table>
-        <p>Draw with a marker-style stroke that simulates a chisel-tip marker. Great for sketching and annotations.</p>
-
-        <h3>Convert Anchor Point Tool</h3>
-        <table class="tool-info">
-            <tr><td>Shortcut</td><td><code>C</code></td></tr>
-            <tr><td>Icon</td><td>Chevron</td></tr>
-        </table>
-        <p>Convert between smooth and corner anchor points. Click a smooth point to convert to corner, drag a corner point to convert to smooth.</p>
+        <h3>Marker Tool (M)</h3>
+        <p>Marker-style stroke simulating a chisel-tip marker.</p>
 
         <h2>Transform Tools</h2>
 
-        <h3>Scale Tool</h3>
-        <table class="tool-info">
-            <tr><td>Shortcut</td><td><code>S</code></td></tr>
-            <tr><td>Icon</td><td>Resize arrows</td></tr>
-        </table>
-        <p>Resize objects proportionally or non-proportionally. Hold Shift to maintain proportions. Hold Option to scale from center.</p>
+        <h3>Scale Tool (S)</h3>
+        <p>Resize objects. Hold Shift for proportions, Option for center scaling.</p>
 
-        <h3>Rotate Tool</h3>
-        <table class="tool-info">
-            <tr><td>Shortcut</td><td><code>R</code></td></tr>
-            <tr><td>Icon</td><td>Circular arrow</td></tr>
-        </table>
-        <p>Rotate objects around their center or a custom pivot point. Hold Shift to constrain to 45° increments.</p>
+        <h3>Rotate Tool (R)</h3>
+        <p>Rotate objects. Hold Shift for 45° increments.</p>
 
-        <h3>Shear Tool</h3>
-        <table class="tool-info">
-            <tr><td>Shortcut</td><td><code>X</code></td></tr>
-            <tr><td>Icon</td><td>Slanted rectangle</td></tr>
-        </table>
-        <p>Skew objects horizontally or vertically to create italic or perspective effects.</p>
+        <h3>Shear Tool (X)</h3>
+        <p>Skew objects for italic or perspective effects.</p>
 
-        <h3>Warp Tool</h3>
-        <table class="tool-info">
-            <tr><td>Shortcut</td><td><code>W</code></td></tr>
-            <tr><td>Icon</td><td>Warped grid</td></tr>
-        </table>
-        <p>Distort objects with envelope warping. Drag corner and edge handles to reshape the object's bounding box.</p>
+        <h3>Warp Tool (W)</h3>
+        <p>Distort objects with envelope warping.</p>
 
         <h2>Shape Tools</h2>
 
-        <h3>Line Tool</h3>
-        <table class="tool-info">
-            <tr><td>Shortcut</td><td><code>L</code></td></tr>
-            <tr><td>Icon</td><td>Diagonal line</td></tr>
-        </table>
-        <p>Draw straight lines. Hold Shift to constrain to 45° increments.</p>
+        <h3>Line Tool (L)</h3>
+        <p>Draw straight lines. Hold Shift for 45° angles.</p>
 
-        <h3>Rectangle Tool</h3>
-        <table class="tool-info">
-            <tr><td>Shortcut</td><td><code>⌥R</code></td></tr>
-            <tr><td>Icon</td><td>Rectangle</td></tr>
-        </table>
-        <p><strong>Purpose:</strong> Create rectangular shapes for buttons, frames, backgrounds, and structural elements in designs.</p>
-        <p><strong>How to use:</strong></p>
-        <ul>
-            <li>Click and drag diagonally to create a rectangle</li>
-            <li>Hold <strong>Shift</strong> while dragging to constrain to a square</li>
-            <li>Hold <strong>Option</strong> to draw from the center outward</li>
-            <li>Hold <strong>Shift + Option</strong> for a square from center</li>
-            <li>Click once to enter exact dimensions numerically</li>
-        </ul>
-        <p><strong>After creating:</strong></p>
-        <ul>
-            <li>Use Corner Radius tool to round corners</li>
-            <li>Apply gradients for button effects</li>
-            <li>Use as clipping masks for images</li>
-        </ul>
-        <p><strong>Best for:</strong> UI elements, business cards, frames, backgrounds, grid layouts, app icons.</p>
+        <h3>Rectangle Tool (⌥R)</h3>
+        <p>Create rectangles. Hold Shift for squares, Option for center drawing.</p>
 
-        <h3>Square Tool</h3>
-        <table class="tool-info">
-            <tr><td>Shortcut</td><td><code>⌥S</code></td></tr>
-            <tr><td>Icon</td><td>Square</td></tr>
-        </table>
-        <p><strong>Purpose:</strong> Quickly create perfect squares without holding modifier keys. Ideal for icons and grid-based designs.</p>
-        <p><strong>How to use:</strong></p>
-        <ul>
-            <li>Drag in any direction - always creates a perfect square</li>
-            <li>Size is determined by drag distance</li>
-            <li>Hold <strong>Option</strong> to draw from center</li>
-            <li>No need to hold Shift like with Rectangle tool</li>
-        </ul>
-        <p><strong>Best for:</strong> App icons, social media graphics, QR code backgrounds, checkerboard patterns, Instagram posts.</p>
+        <h3>Circle Tool (⌥C)</h3>
+        <p>Draw perfect circles.</p>
 
-        <h3>Rounded Rectangle Tool</h3>
-        <table class="tool-info">
-            <tr><td>Shortcut</td><td><code>⌥⇧R</code></td></tr>
-            <tr><td>Icon</td><td>Rounded rectangle</td></tr>
-        </table>
-        <p>Draw rectangles with rounded corners. Adjust corner radius with the Corner Radius tool or in properties.</p>
+        <h3>Ellipse Tool (E)</h3>
+        <p>Create ovals. Hold Shift for circles.</p>
 
-        <h3>Pill Tool</h3>
-        <table class="tool-info">
-            <tr><td>Shortcut</td><td><code>⌥⇧P</code></td></tr>
-            <tr><td>Icon</td><td>Capsule</td></tr>
-        </table>
-        <p>Draw pill-shaped (stadium) objects with fully rounded ends.</p>
+        <h3>Polygon Tool (⌥P)</h3>
+        <p>Regular polygons with 3-100 sides.</p>
 
-        <h3>Circle Tool</h3>
-        <table class="tool-info">
-            <tr><td>Shortcut</td><td><code>⌥C</code></td></tr>
-            <tr><td>Icon</td><td>Circle</td></tr>
-        </table>
-        <p>Draw perfect circles. Hold Option to draw from center.</p>
-
-        <h3>Ellipse Tool</h3>
-        <table class="tool-info">
-            <tr><td>Shortcut</td><td><code>E</code></td></tr>
-            <tr><td>Icon</td><td>Oval outline</td></tr>
-        </table>
-        <p>Draw ellipses. Hold Shift to create a circle. Hold Option to draw from center.</p>
-
-        <h3>Oval Tool</h3>
-        <table class="tool-info">
-            <tr><td>Shortcut</td><td><code>O</code></td></tr>
-            <tr><td>Icon</td><td>Filled oval</td></tr>
-        </table>
-        <p>Draw elongated ovals with a specific aspect ratio.</p>
-
-        <h3>Egg Tool</h3>
-        <table class="tool-info">
-            <tr><td>Shortcut</td><td><code>⇧E</code></td></tr>
-            <tr><td>Icon</td><td>Egg shape</td></tr>
-        </table>
-        <p>Draw egg-shaped objects with one end wider than the other.</p>
-
-        <h3>Cone Tool</h3>
-        <table class="tool-info">
-            <tr><td>Shortcut</td><td><code>⌥⇧C</code></td></tr>
-            <tr><td>Icon</td><td>Triangle</td></tr>
-        </table>
-        <p>Draw cone or teardrop shapes with a rounded base and pointed top.</p>
+        <h3>Star Tool (⇧S)</h3>
+        <p>Stars with customizable points and inner radius.</p>
 
         <h2>Triangle Tools</h2>
-
-        <h3>Equilateral Triangle Tool</h3>
-        <table class="tool-info">
-            <tr><td>Shortcut</td><td><code>⇧T</code></td></tr>
-            <tr><td>Icon</td><td>Triangle</td></tr>
-        </table>
-        <p>Draw triangles with all sides equal length (60° angles).</p>
-
-        <h3>Isosceles Triangle Tool</h3>
-        <table class="tool-info">
-            <tr><td>Shortcut</td><td><code>I</code></td></tr>
-            <tr><td>Icon</td><td>Filled triangle</td></tr>
-        </table>
-        <p>Draw triangles with two equal sides.</p>
-
-        <h3>Right Triangle Tool</h3>
-        <table class="tool-info">
-            <tr><td>Shortcut</td><td><code>⌥⇧R</code></td></tr>
-            <tr><td>Icon</td><td>Right triangle</td></tr>
-        </table>
-        <p>Draw triangles with one 90° angle.</p>
-
-        <h3>Acute Triangle Tool</h3>
-        <table class="tool-info">
-            <tr><td>Shortcut</td><td><code>⇧A</code></td></tr>
-            <tr><td>Icon</td><td>Acute triangle</td></tr>
-        </table>
-        <p>Draw triangles with all angles less than 90°.</p>
-
-        <h2>Polygon Tools</h2>
-
-        <h3>Star Tool</h3>
-        <table class="tool-info">
-            <tr><td>Shortcut</td><td><code>⇧S</code></td></tr>
-            <tr><td>Icon</td><td>Star</td></tr>
-        </table>
-        <p>Draw stars with customizable number of points and inner radius. Adjust properties in the panel while drawing.</p>
-
-        <h3>Polygon Tool</h3>
-        <table class="tool-info">
-            <tr><td>Shortcut</td><td><code>⌥P</code></td></tr>
-            <tr><td>Icon</td><td>Hexagon</td></tr>
-        </table>
-        <p>Draw regular polygons with any number of sides. Set the number of sides in properties before drawing.</p>
-
-        <h3>Pentagon Tool</h3>
-        <table class="tool-info">
-            <tr><td>Shortcut</td><td><code>5</code></td></tr>
-            <tr><td>Icon</td><td>Pentagon</td></tr>
-        </table>
-        <p>Draw regular 5-sided polygons.</p>
-
-        <h3>Hexagon Tool</h3>
-        <table class="tool-info">
-            <tr><td>Shortcut</td><td><code>6</code></td></tr>
-            <tr><td>Icon</td><td>Hexagon</td></tr>
-        </table>
-        <p>Draw regular 6-sided polygons.</p>
-
-        <h3>Heptagon Tool</h3>
-        <table class="tool-info">
-            <tr><td>Shortcut</td><td><code>7</code></td></tr>
-            <tr><td>Icon</td><td>Heptagon</td></tr>
-        </table>
-        <p>Draw regular 7-sided polygons.</p>
-
-        <h3>Octagon Tool</h3>
-        <table class="tool-info">
-            <tr><td>Shortcut</td><td><code>8</code></td></tr>
-            <tr><td>Icon</td><td>Octagon</td></tr>
-        </table>
-        <p>Draw regular 8-sided polygons.</p>
+        <ul>
+            <li><strong>Equilateral (⇧T):</strong> All sides equal</li>
+            <li><strong>Isosceles (I):</strong> Two equal sides</li>
+            <li><strong>Right Triangle:</strong> One 90° angle</li>
+            <li><strong>Acute (⇧A):</strong> All angles under 90°</li>
+        </ul>
 
         <h2>Specialty Tools</h2>
 
-        <h3>Text Tool</h3>
-        <table class="tool-info">
-            <tr><td>Shortcut</td><td><code>T</code></td></tr>
-            <tr><td>Icon</td><td>Text format</td></tr>
-        </table>
-        <p>Add and edit text. Click to create a point text object, or drag to create an area text box. Double-click existing text to edit.</p>
+        <h3>Text Tool (T)</h3>
+        <p>Add and edit text. Click for point text, drag for area text.</p>
 
-        <h3>Eyedropper Tool</h3>
-        <table class="tool-info">
-            <tr><td>Shortcut</td><td><code>I</code></td></tr>
-            <tr><td>Icon</td><td>Eyedropper</td></tr>
-        </table>
-        <p>Sample colors from any object. Click to pick up a color, then click another object to apply it. Hold Shift to sample only fill or stroke.</p>
+        <h3>Eyedropper Tool (I)</h3>
+        <p>Sample colors from any object.</p>
 
-        <h3>Gradient Tool</h3>
-        <table class="tool-info">
-            <tr><td>Shortcut</td><td><code>G</code></td></tr>
-            <tr><td>Icon</td><td>Gradient circle</td></tr>
-        </table>
-        <p><strong>Purpose:</strong> Apply and edit gradient fills on objects. Create smooth color transitions for professional effects like buttons, backgrounds, and 3D-like appearances.</p>
-        <p><strong>How to use:</strong></p>
-        <ul>
-            <li>Select an object first</li>
-            <li>Click and drag across the object to define gradient direction</li>
-            <li>Start point = first color, end point = last color</li>
-            <li>Drag longer for gradual transitions, shorter for sharp transitions</li>
-            <li>Re-drag to adjust angle and length</li>
-        </ul>
-        <p><strong>Gradient types:</strong></p>
-        <ul>
-            <li><strong>Linear:</strong> Straight color transition in one direction</li>
-            <li><strong>Radial:</strong> Circular transition from center outward</li>
-        </ul>
-        <p><strong>Pro workflow:</strong></p>
-        <ol>
-            <li>Apply gradient with the tool</li>
-            <li>Open Gradient panel (⌘⇧G) to edit colors</li>
-            <li>Add color stops for complex gradients</li>
-            <li>Adjust opacity for each color stop</li>
-        </ol>
-        <p><strong>Best for:</strong> Buttons with depth, metallic effects, sky backgrounds, glossy surfaces, modern UI elements.</p>
+        <h3>Gradient Tool (G)</h3>
+        <p>Apply and adjust gradients on selected objects.</p>
 
-        <h3>Corner Radius Tool</h3>
-        <table class="tool-info">
-            <tr><td>Shortcut</td><td><code>⌃↑</code></td></tr>
-            <tr><td>Icon</td><td>Rounded corner</td></tr>
-        </table>
-        <p><strong>Purpose:</strong> Dynamically adjust corner rounding on rectangles and other shapes. Create everything from slightly rounded buttons to pill shapes.</p>
-        <p><strong>How to use:</strong></p>
-        <ul>
-            <li>Select a rectangle or shape with corners</li>
-            <li>Switch to Corner Radius tool</li>
-            <li>Drag any corner handle inward to round it</li>
-            <li>Drag outward to reduce rounding</li>
-            <li>Hold Shift to round all corners equally</li>
-            <li>Click individual corners to round them separately</li>
-        </ul>
-        <p><strong>Advanced features:</strong></p>
-        <ul>
-            <li><strong>Asymmetric corners:</strong> Round each corner differently for unique shapes</li>
-            <li><strong>Live adjustment:</strong> See changes in real-time as you drag</li>
-            <li><strong>Precise values:</strong> Enter exact radius in properties panel</li>
-            <li><strong>Maximum radius:</strong> Automatically limits to create pill/stadium shapes</li>
-        </ul>
-        <p><strong>Common uses:</strong></p>
-        <ul>
-            <li>Modern UI buttons and cards</li>
-            <li>App icons (different radius per platform guidelines)</li>
-            <li>Speech bubbles with selective corner rounding</li>
-            <li>Badges and tags</li>
-        </ul>
-        <p><strong>Best for:</strong> iOS/Android UI design, modern web elements, friendly approachable logos, notification badges.</p>
+        <h3>Corner Radius Tool (⌃↑)</h3>
+        <p>Dynamically round corners on rectangles and shapes.</p>
 
         <h2>Tool Modifiers</h2>
-
         <div class="note">
-            <h4>Universal Modifiers</h4>
             <ul>
                 <li><strong>Shift:</strong> Constrain proportions or angles</li>
-                <li><strong>Option (⌥):</strong> Draw/transform from center or duplicate</li>
+                <li><strong>Option (⌥):</strong> Draw from center or duplicate</li>
                 <li><strong>Command (⌘):</strong> Temporarily switch to Selection tool</li>
                 <li><strong>Space:</strong> Temporarily switch to Hand tool</li>
             </ul>
         </div>
 
-        <h2>Tool Tips</h2>
-        <ul>
-            <li>Double-click tool icons to access tool-specific options</li>
-            <li>Group frequently used tools by customizing your toolbar</li>
-            <li>Use number keys for quick polygon sides (3-9)</li>
-            <li>Press the tool shortcut again to cycle through tool variants</li>
-            <li>Hold down a tool to reveal related tools in a flyout menu</li>
-        </ul>
-
         <p><a href="index.html">← Back to Help Topics</a></p>
     </div>
 
-    <style>
-        .tool-info {
-            width: 100%;
-            margin: 10px 0 15px 0;
-            border-collapse: collapse;
-        }
-
-        .tool-info td {
-            padding: 8px;
-            border: 1px solid #e0e0e0;
-        }
-
-        .tool-info td:first-child {
-            width: 120px;
-            font-weight: 600;
-            background: #f9f9f9;
-        }
-
-        h3 {
-            margin-top: 25px;
-            color: #333;
-            border-bottom: 1px solid #e0e0e0;
-            padding-bottom: 5px;
-        }
-    </style>
-    <div id="footer-container"></div>
-    <script>document.write('<script src="common.js?v='+Date.now()+'"><\/script>');</script>
+    <script src="../footer.js"></script>
 </body>
 </html>

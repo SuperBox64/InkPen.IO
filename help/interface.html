@@ -2,39 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interface Overview - Logos InkPen Help</title>
     <meta name="description" content="Complete guide to the Logos InkPen interface">
     <meta name="keywords" content="interface, workspace, panels, toolbar, menus">
-    <link data-cache-bust="style.css" rel="stylesheet" type="text/css">
-    <link data-cache-bust="../footer.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&display=swap" rel="stylesheet">
     <script>document.write('<script src="../version.js?v='+Date.now()+'"><\/script>');</script>
 </head>
 <body>
-    <div class="content">
+    <script src="../banner.js"></script>
+    <div class="banner">
         <h1>Interface Overview</h1>
+    </div>
 
+    <div class="content">
         <p>The Logos InkPen interface is designed for efficient vector design work, with tools and panels organized for quick access.</p>
 
         <h2>Main Window Layout</h2>
-
-        <div class="interface-diagram">
-            <table class="layout-table">
-                <tr>
-                    <td class="menu-bar" colspan="3">Menu Bar</td>
-                </tr>
-                <tr>
-                    <td class="toolbar" colspan="3">Document Toolbar</td>
-                </tr>
-                <tr>
-                    <td class="left-panel">Vertical<br>Toolbar</td>
-                    <td class="canvas">Canvas Area<br>(with rulers)</td>
-                    <td class="right-panel">Right<br>Panels</td>
-                </tr>
-                <tr>
-                    <td class="status-bar" colspan="3">Status Bar</td>
-                </tr>
-            </table>
-        </div>
+        <p>The interface consists of: Menu Bar (top), Document Toolbar, Vertical Toolbar (left), Canvas Area (center), Right Panels, and Status Bar (bottom).</p>
 
         <h2>Interface Components</h2>
 
@@ -75,7 +61,10 @@
             <li><strong>Navigation:</strong> Hand, Zoom tools</li>
             <li><strong>Color Swatches:</strong> Quick color selection grid at bottom</li>
         </ul>
-        <p class="note"><strong>Tip:</strong> Long-press tool buttons to reveal tool variants and groups.</p>
+
+        <div class="note">
+            <strong>Tip:</strong> Long-press tool buttons to reveal tool variants and groups.
+        </div>
 
         <h3>4. Canvas Area</h3>
         <p>The main drawing area where you create and edit your designs:</p>
@@ -91,62 +80,17 @@
         <h3>5. Right Panel System</h3>
         <p>Context-sensitive panels organized in tabs:</p>
 
-        <h4>Layer Panel (⌘⇧L)</h4>
-        <ul>
-            <li>View and organize all layers</li>
-            <li>Create, delete, rename layers</li>
-            <li>Lock/unlock and show/hide layers</li>
-            <li>Drag to reorder layers</li>
-            <li>Set active layer for new objects</li>
-        </ul>
+        <p><strong>Layer Panel (⌘⇧L):</strong> View and organize all layers, create, delete, rename, lock/unlock and show/hide layers.</p>
 
-        <h4>Paint Panel (⌘⇧P)</h4>
-        <ul>
-            <li><strong>Fill Settings:</strong> Color, opacity, blend mode</li>
-            <li><strong>Stroke Settings:</strong> Color, width, dash pattern, caps, joins</li>
-            <li><strong>Shadow Effects:</strong> Color, offset, blur, opacity</li>
-            <li><strong>Transform Values:</strong> Precise position, size, rotation</li>
-            <li><strong>Opacity & Blending:</strong> Object transparency and blend modes</li>
-        </ul>
+        <p><strong>Paint Panel (⌘⇧P):</strong> Fill settings, stroke settings, shadow effects, transform values, opacity and blending.</p>
 
-        <h4>Grade Panel (⌘⇧G)</h4>
-        <ul>
-            <li>Create and edit gradients</li>
-            <li>Linear and radial gradient types</li>
-            <li>Add/remove color stops</li>
-            <li>Adjust stop positions and colors</li>
-            <li>Save gradients as presets</li>
-            <li>Apply gradients to fill or stroke</li>
-        </ul>
+        <p><strong>Grade Panel (⌘⇧G):</strong> Create and edit gradients, linear and radial types, add/remove color stops.</p>
 
-        <h4>Ink Panel (⌘⇧C)</h4>
-        <ul>
-            <li>Advanced color picker</li>
-            <li>RGB, CMYK, HSB color modes</li>
-            <li>Pantone color library</li>
-            <li>Apple system colors</li>
-            <li>Color history and favorites</li>
-            <li>Eyedropper for sampling</li>
-        </ul>
+        <p><strong>Ink Panel (⌘⇧C):</strong> Advanced color picker with RGB, CMYK, HSB modes, Pantone library, Apple system colors.</p>
 
-        <h4>Path Panel (⌘⇧O)</h4>
-        <ul>
-            <li><strong>Boolean Operations:</strong> Unite, Subtract, Intersect, Exclude</li>
-            <li><strong>Path Commands:</strong> Outline stroke, simplify, expand</li>
-            <li><strong>Compound Paths:</strong> Create and release</li>
-            <li><strong>Path Direction:</strong> Reverse path direction</li>
-            <li><strong>Join Paths:</strong> Connect selected endpoints</li>
-        </ul>
+        <p><strong>Path Panel (⌘⇧O):</strong> Boolean operations (Unite, Subtract, Intersect, Exclude), path commands.</p>
 
-        <h4>Font Panel (⌘⇧F)</h4>
-        <ul>
-            <li>Font family and style selection</li>
-            <li>Size, leading, tracking, kerning</li>
-            <li>Alignment: left, center, right, justify</li>
-            <li>Text color and effects</li>
-            <li>Convert text to outlines</li>
-            <li>OpenType features</li>
-        </ul>
+        <p><strong>Font Panel (⌘⇧F):</strong> Font family and style selection, size, leading, tracking, kerning, alignment.</p>
 
         <h3>6. Status Bar</h3>
         <p>Information display at bottom of window:</p>
@@ -167,16 +111,6 @@
             <li>Use Panel menu to quickly jump to any panel</li>
         </ul>
 
-        <h3>Workspace Preferences</h3>
-        <p>Customize your workspace in Preferences (⌘,):</p>
-        <ul>
-            <li>Default tool on startup</li>
-            <li>Grid spacing and color</li>
-            <li>Ruler units (pixels, points, inches, mm)</li>
-            <li>Canvas background color</li>
-            <li>Pressure sensitivity settings</li>
-        </ul>
-
         <h3>Keyboard Navigation</h3>
         <ul>
             <li><strong>Space:</strong> Temporarily activate Hand tool</li>
@@ -186,87 +120,16 @@
             <li><strong>⌘+/−:</strong> Zoom in/out</li>
         </ul>
 
-        <h2>Interface Tips</h2>
-        <div class="note">
-            <ul>
-                <li>Right-click objects for context menus</li>
-                <li>Double-click tools to access tool options</li>
-                <li>Hold Shift while dragging to constrain proportions</li>
-                <li>Hold Option to duplicate while dragging</li>
-                <li>Use ⌘ to temporarily switch to Selection tool</li>
-            </ul>
-        </div>
-
         <h2>Related Topics</h2>
         <ul>
             <li><a href="tools.html">Complete Tools Reference</a></li>
             <li><a href="panels.html">Working with Panels</a></li>
             <li><a href="shortcuts.html">Keyboard Shortcuts</a></li>
-            <li><a href="preferences.html">Setting Preferences</a></li>
         </ul>
 
         <p><a href="index.html">← Back to Help Topics</a></p>
     </div>
 
-    <style>
-        .interface-diagram {
-            margin: 20px 0;
-            padding: 20px;
-            background: #f9f9f9;
-            border-radius: 8px;
-        }
-
-        .layout-table {
-            width: 100%;
-            border-collapse: collapse;
-            background: white;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-
-        .layout-table td {
-            border: 1px solid #ddd;
-            padding: 20px;
-            text-align: center;
-            font-weight: 600;
-        }
-
-        .menu-bar {
-            background: #f0f0f0;
-            height: 30px;
-        }
-
-        .toolbar {
-            background: #e8e8e8;
-            height: 40px;
-        }
-
-        .left-panel {
-            background: #f5f5f5;
-            width: 60px;
-        }
-
-        .canvas {
-            background: white;
-            min-height: 200px;
-        }
-
-        .right-panel {
-            background: #f5f5f5;
-            width: 250px;
-        }
-
-        .status-bar {
-            background: #e0e0e0;
-            height: 25px;
-        }
-
-        h4 {
-            margin-top: 20px;
-            color: #444;
-            font-size: 16px;
-        }
-    </style>
-    <div id="footer-container"></div>
-    <script>document.write('<script src="common.js?v='+Date.now()+'"><\/script>');</script>
+    <script src="../footer.js"></script>
 </body>
 </html>

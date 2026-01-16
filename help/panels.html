@@ -2,368 +2,90 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Panels Reference - Logos InkPen Help</title>
     <meta name="description" content="Complete guide to all panels in Logos InkPen">
     <meta name="keywords" content="panels, layers, properties, gradient, color, font, path">
-    <link data-cache-bust="style.css" rel="stylesheet" type="text/css">
-    <link data-cache-bust="../footer.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&display=swap" rel="stylesheet">
     <script>document.write('<script src="../version.js?v='+Date.now()+'"><\/script>');</script>
 </head>
 <body>
-    <div class="content">
+    <script src="../banner.js"></script>
+    <div class="banner">
         <h1>Panels Reference</h1>
+    </div>
 
-        <p>Logos InkPen's right panel system provides context-sensitive controls for every aspect of your design. Access panels through tabs or keyboard shortcuts.</p>
+    <div class="content">
+        <p>Logos InkPen's right panel system provides context-sensitive controls for every aspect of your design.</p>
 
-        <h2>Layer Panel</h2>
-        <table class="panel-info">
-            <tr><td>Shortcut</td><td><code>⌘⇧L</code></td></tr>
-            <tr><td>Menu</td><td>Panel > Layer</td></tr>
-            <tr><td>Icon</td><td>Square stack</td></tr>
-        </table>
-
-        <h3>Layer Management</h3>
-        <p><strong>Purpose:</strong> Organize your artwork into logical layers for easier editing and organization.</p>
-
-        <h4>Layer Controls</h4>
+        <h2>Layer Panel (⌘⇧L)</h2>
+        <p>Organize your artwork into logical layers.</p>
         <ul>
-            <li><strong>Add Layer (+):</strong> Create a new layer above current</li>
-            <li><strong>Delete Layer (−):</strong> Remove selected layer and its contents</li>
-            <li><strong>Duplicate Layer:</strong> Copy layer with all objects</li>
-            <li><strong>Merge Down:</strong> Combine with layer below</li>
+            <li>Add/delete layers</li>
+            <li>Show/hide and lock layers</li>
+            <li>Reorder by dragging</li>
+            <li>Adjust layer opacity and blend modes</li>
         </ul>
 
-        <h4>Layer Properties</h4>
+        <h2>Paint Panel (⌘⇧P)</h2>
+        <p>Control fill and stroke properties.</p>
         <ul>
-            <li><strong>Visibility Eye Icon:</strong> Show/hide layer contents</li>
-            <li><strong>Lock Icon:</strong> Prevent editing of layer objects</li>
-            <li><strong>Name:</strong> Double-click to rename layer</li>
-            <li><strong>Opacity:</strong> Adjust entire layer transparency</li>
-            <li><strong>Blend Mode:</strong> How layer interacts with layers below</li>
+            <li><strong>Fill:</strong> Color, gradient, or pattern</li>
+            <li><strong>Stroke:</strong> Width, color, caps, joins, dashes</li>
+            <li><strong>Shadow:</strong> Color, offset, blur</li>
+            <li><strong>Opacity:</strong> Overall transparency</li>
         </ul>
 
-        <h4>Layer Organization</h4>
+        <h2>Grade Panel (⌘⇧G)</h2>
+        <p>Create and edit gradients.</p>
         <ul>
-            <li>Drag layers to reorder (top layer is frontmost)</li>
-            <li>Click to select active layer for new objects</li>
-            <li>Shift-click to select multiple layers</li>
-            <li>Option-drag to copy objects between layers</li>
+            <li>Linear and radial types</li>
+            <li>Add/remove color stops</li>
+            <li>Adjust angle and scale</li>
+            <li>Save gradient presets</li>
         </ul>
 
-        <h4>Special Layers</h4>
+        <h2>Ink Panel (⌘⇧C)</h2>
+        <p>Advanced color selection.</p>
         <ul>
-            <li><strong>Canvas:</strong> Background layer (always bottom)</li>
-            <li><strong>Pasteboard:</strong> Temporary storage outside page</li>
-            <li><strong>Template:</strong> Locked reference layer for tracing</li>
+            <li>RGB, CMYK, HSB color modes</li>
+            <li>Color wheel and sliders</li>
+            <li>Pantone and system colors</li>
+            <li>Eyedropper sampling</li>
         </ul>
 
-        <h2>Paint Panel</h2>
-        <table class="panel-info">
-            <tr><td>Shortcut</td><td><code>⌘⇧P</code></td></tr>
-            <tr><td>Menu</td><td>Panel > Paint</td></tr>
-            <tr><td>Icon</td><td>Paintbrush</td></tr>
-        </table>
-
-        <h3>Fill Properties</h3>
-        <p><strong>Purpose:</strong> Control the interior appearance of shapes and text.</p>
-
-        <h4>Fill Options</h4>
+        <h2>Path Panel (⌘⇧O)</h2>
+        <p>Boolean and path operations.</p>
         <ul>
-            <li><strong>Color Picker:</strong> Click to choose fill color</li>
-            <li><strong>No Fill:</strong> Remove fill (transparent interior)</li>
-            <li><strong>Solid Color:</strong> Single color fill</li>
-            <li><strong>Gradient:</strong> Multi-color gradient fill</li>
-            <li><strong>Pattern:</strong> Repeating pattern fill</li>
+            <li><strong>Unite:</strong> Merge shapes</li>
+            <li><strong>Subtract:</strong> Remove top from bottom</li>
+            <li><strong>Intersect:</strong> Keep overlap only</li>
+            <li><strong>Exclude:</strong> Remove overlap (XOR)</li>
+            <li>Outline stroke, simplify, join paths</li>
         </ul>
 
-        <h4>Fill Settings</h4>
+        <h2>Font Panel (⌘⇧F)</h2>
+        <p>Typography controls.</p>
         <ul>
-            <li><strong>Opacity:</strong> 0% (transparent) to 100% (opaque)</li>
-            <li><strong>Blend Mode:</strong> How fill interacts with objects below</li>
-            <li><strong>Overprint:</strong> Print color on top (for CMYK)</li>
-        </ul>
-
-        <h3>Stroke Properties</h3>
-        <p><strong>Purpose:</strong> Define the outline appearance of objects.</p>
-
-        <h4>Stroke Settings</h4>
-        <ul>
-            <li><strong>Width:</strong> Thickness in current units (0.5pt to 100pt)</li>
-            <li><strong>Color:</strong> Click to set stroke color</li>
-            <li><strong>Opacity:</strong> Stroke transparency</li>
-            <li><strong>Position:</strong> Center, Inside, or Outside path</li>
-        </ul>
-
-        <h4>Stroke Style</h4>
-        <ul>
-            <li><strong>Cap Style:</strong>
-                <ul>
-                    <li>Butt: Square ends at path endpoints</li>
-                    <li>Round: Rounded ends extending past endpoints</li>
-                    <li>Square: Square ends extending past endpoints</li>
-                </ul>
-            </li>
-            <li><strong>Join Style:</strong>
-                <ul>
-                    <li>Miter: Sharp corners</li>
-                    <li>Round: Rounded corners</li>
-                    <li>Bevel: Flattened corners</li>
-                </ul>
-            </li>
-            <li><strong>Miter Limit:</strong> Maximum sharpness for miter joins</li>
-        </ul>
-
-        <h4>Dash Pattern</h4>
-        <ul>
-            <li><strong>Solid:</strong> Continuous stroke</li>
-            <li><strong>Dashed:</strong> Regular dash pattern</li>
-            <li><strong>Dotted:</strong> Dot pattern</li>
-            <li><strong>Custom:</strong> Define dash and gap lengths</li>
-        </ul>
-
-        <h3>Shadow Effects</h3>
-        <ul>
-            <li><strong>Enable:</strong> Toggle shadow on/off</li>
-            <li><strong>Color:</strong> Shadow color and opacity</li>
-            <li><strong>X/Y Offset:</strong> Shadow distance and direction</li>
-            <li><strong>Blur:</strong> Shadow softness (0 = sharp)</li>
-            <li><strong>Spread:</strong> Shadow expansion</li>
-        </ul>
-
-        <h2>Grade Panel (Gradient)</h2>
-        <table class="panel-info">
-            <tr><td>Shortcut</td><td><code>⌘⇧G</code></td></tr>
-            <tr><td>Menu</td><td>Panel > Grade</td></tr>
-            <tr><td>Icon</td><td>Gradient circle</td></tr>
-        </table>
-
-        <h3>Gradient Editor</h3>
-        <p><strong>Purpose:</strong> Create smooth color transitions for sophisticated effects.</p>
-
-        <h4>Gradient Types</h4>
-        <ul>
-            <li><strong>Linear:</strong> Straight-line color transition</li>
-            <li><strong>Radial:</strong> Circular transition from center</li>
-            <li><strong>Angular:</strong> Rotational sweep around center</li>
-            <li><strong>Diamond:</strong> Diamond-shaped transition</li>
-        </ul>
-
-        <h4>Gradient Bar Controls</h4>
-        <ul>
-            <li><strong>Color Stops:</strong> Click below bar to add stops</li>
-            <li><strong>Move Stops:</strong> Drag left/right to adjust position</li>
-            <li><strong>Delete Stops:</strong> Drag stop away from bar</li>
-            <li><strong>Stop Color:</strong> Double-click stop to edit color</li>
-            <li><strong>Stop Opacity:</strong> Click stop, adjust opacity slider</li>
-        </ul>
-
-        <h4>Gradient Settings</h4>
-        <ul>
-            <li><strong>Angle:</strong> Rotation for linear gradients (0-360°)</li>
-            <li><strong>Scale:</strong> Size of radial gradient</li>
-            <li><strong>Aspect Ratio:</strong> Stretch gradient oval/ellipse</li>
-            <li><strong>Reverse:</strong> Flip gradient direction</li>
-            <li><strong>Repeat:</strong> Tile gradient pattern</li>
-        </ul>
-
-        <h4>Gradient Application</h4>
-        <ul>
-            <li>Apply to Fill or Stroke independently</li>
-            <li>Use Gradient tool (G) to adjust on canvas</li>
-            <li>Save gradients as swatches for reuse</li>
-            <li>Import/export gradient libraries</li>
-        </ul>
-
-        <h2>Ink Panel (Color)</h2>
-        <table class="panel-info">
-            <tr><td>Shortcut</td><td><code>⌘⇧C</code></td></tr>
-            <tr><td>Menu</td><td>Panel > Ink</td></tr>
-            <tr><td>Icon</td><td>Color wheel</td></tr>
-        </table>
-
-        <h3>Color Selection Methods</h3>
-
-        <h4>Color Wheel</h4>
-        <ul>
-            <li>Drag in wheel to select hue</li>
-            <li>Drag in triangle for saturation/brightness</li>
-            <li>Precise visual color selection</li>
-        </ul>
-
-        <h4>Color Sliders</h4>
-        <ul>
-            <li><strong>RGB:</strong> Red, Green, Blue (0-255)</li>
-            <li><strong>CMYK:</strong> Cyan, Magenta, Yellow, Black (0-100%)</li>
-            <li><strong>HSB:</strong> Hue (0-360°), Saturation, Brightness (0-100%)</li>
-            <li><strong>LAB:</strong> Lightness, A axis, B axis</li>
-        </ul>
-
-        <h4>Color Libraries</h4>
-        <ul>
-            <li><strong>Pantone:</strong> Industry-standard spot colors</li>
-            <li><strong>Web Safe:</strong> 216 browser-compatible colors</li>
-            <li><strong>Apple System:</strong> macOS/iOS system colors</li>
-            <li><strong>Material Design:</strong> Google's color palette</li>
-            <li><strong>Custom Swatches:</strong> Your saved colors</li>
-        </ul>
-
-        <h4>Color Tools</h4>
-        <ul>
-            <li><strong>Eyedropper:</strong> Sample any screen color</li>
-            <li><strong>Hex Input:</strong> Enter web color codes</li>
-            <li><strong>Color History:</strong> Recently used colors</li>
-            <li><strong>Complementary:</strong> Generate color harmonies</li>
-            <li><strong>Tints/Shades:</strong> Create lighter/darker variants</li>
-        </ul>
-
-        <h2>Path Panel</h2>
-        <table class="panel-info">
-            <tr><td>Shortcut</td><td><code>⌘⇧O</code></td></tr>
-            <tr><td>Menu</td><td>Panel > Path</td></tr>
-            <tr><td>Icon</td><td>Path nodes</td></tr>
-        </table>
-
-        <h3>Boolean Operations</h3>
-        <p><strong>Purpose:</strong> Combine shapes to create complex forms.</p>
-
-        <h4>Path Operations</h4>
-        <ul>
-            <li><strong>Unite:</strong> Merge selected shapes into one</li>
-            <li><strong>Subtract:</strong> Remove top shape from bottom</li>
-            <li><strong>Intersect:</strong> Keep only overlapping areas</li>
-            <li><strong>Exclude:</strong> Remove overlapping areas (XOR)</li>
-            <li><strong>Divide:</strong> Split at all intersections</li>
-            <li><strong>Trim:</strong> Remove hidden portions</li>
-        </ul>
-
-        <h4>Path Commands</h4>
-        <ul>
-            <li><strong>Outline Stroke:</strong> Convert stroke to filled path</li>
-            <li><strong>Offset Path:</strong> Create parallel path at distance</li>
-            <li><strong>Simplify:</strong> Reduce anchor points</li>
-            <li><strong>Clean Up:</strong> Remove stray points</li>
-            <li><strong>Reverse Direction:</strong> Flip path winding</li>
-            <li><strong>Join:</strong> Connect selected endpoints</li>
-            <li><strong>Average:</strong> Align selected points</li>
-        </ul>
-
-        <h4>Compound Paths</h4>
-        <ul>
-            <li><strong>Make Compound:</strong> Combine paths with holes (⌘8)</li>
-            <li><strong>Release Compound:</strong> Separate into individual paths (⌘⌥8)</li>
-            <li><strong>Fill Rule:</strong> Non-zero or even-odd winding</li>
-        </ul>
-
-        <h2>Font Panel</h2>
-        <table class="panel-info">
-            <tr><td>Shortcut</td><td><code>⌘⇧F</code></td></tr>
-            <tr><td>Menu</td><td>Panel > Font</td></tr>
-            <tr><td>Icon</td><td>Text format</td></tr>
-        </table>
-
-        <h3>Typography Controls</h3>
-
-        <h4>Font Selection</h4>
-        <ul>
-            <li><strong>Family:</strong> Choose typeface family</li>
-            <li><strong>Style:</strong> Regular, Bold, Italic, etc.</li>
-            <li><strong>Size:</strong> Point size (6pt to 720pt)</li>
-            <li><strong>Preview:</strong> See font sample</li>
-        </ul>
-
-        <h4>Character Formatting</h4>
-        <ul>
-            <li><strong>Leading:</strong> Line spacing/height</li>
-            <li><strong>Tracking:</strong> Overall letter spacing</li>
-            <li><strong>Kerning:</strong> Space between letter pairs</li>
-            <li><strong>Baseline Shift:</strong> Vertical position</li>
-            <li><strong>Horizontal Scale:</strong> Stretch/compress</li>
-            <li><strong>Vertical Scale:</strong> Height adjustment</li>
-        </ul>
-
-        <h4>Paragraph Formatting</h4>
-        <ul>
-            <li><strong>Alignment:</strong>
-                <ul>
-                    <li>Left: Align to left edge</li>
-                    <li>Center: Center each line</li>
-                    <li>Right: Align to right edge</li>
-                    <li>Justify: Align both edges</li>
-                </ul>
-            </li>
-            <li><strong>Indents:</strong> First line, left, right</li>
-            <li><strong>Space Before/After:</strong> Paragraph spacing</li>
-            <li><strong>Hyphenation:</strong> Auto-hyphenate long words</li>
-        </ul>
-
-        <h4>Text Effects</h4>
-        <ul>
-            <li><strong>All Caps:</strong> Convert to uppercase</li>
-            <li><strong>Small Caps:</strong> Smaller capitals</li>
-            <li><strong>Superscript:</strong> Raised smaller text</li>
-            <li><strong>Subscript:</strong> Lowered smaller text</li>
-            <li><strong>Underline:</strong> Add underline</li>
-            <li><strong>Strikethrough:</strong> Add line through</li>
-        </ul>
-
-        <h4>Text Operations</h4>
-        <ul>
-            <li><strong>Create Outlines:</strong> Convert to vector paths (⌘⇧O)</li>
-            <li><strong>Text on Path:</strong> Flow text along shape</li>
-            <li><strong>Area Text:</strong> Flow text within shape</li>
-            <li><strong>Linked Text:</strong> Connect text frames</li>
+            <li>Font family and style</li>
+            <li>Size, leading, tracking, kerning</li>
+            <li>Alignment options</li>
+            <li>Convert to outlines</li>
         </ul>
 
         <h2>Panel Tips</h2>
         <div class="note">
-            <h4>Efficiency Tips</h4>
             <ul>
-                <li>Use keyboard shortcuts to quickly switch panels</li>
-                <li>Double-click panel tab to minimize/maximize</li>
-                <li>Tab key hides/shows all panels for more canvas space</li>
-                <li>Right-click in panels for context menus</li>
-                <li>Drag panel edges to resize for your workflow</li>
+                <li>Use keyboard shortcuts to switch panels</li>
+                <li>Double-click tab to minimize</li>
+                <li>Tab key hides all panels</li>
             </ul>
         </div>
-
-        <h2>Related Topics</h2>
-        <ul>
-            <li><a href="interface.html">Interface Overview</a></li>
-            <li><a href="tools.html">Drawing Tools Reference</a></li>
-            <li><a href="colors.html">Working with Color</a></li>
-            <li><a href="layers.html">Layer Management</a></li>
-        </ul>
 
         <p><a href="index.html">← Back to Help Topics</a></p>
     </div>
 
-    <style>
-        .panel-info {
-            width: 100%;
-            margin: 10px 0 15px 0;
-            border-collapse: collapse;
-        }
-
-        .panel-info td {
-            padding: 8px;
-            border: 1px solid #e0e0e0;
-        }
-
-        .panel-info td:first-child {
-            width: 100px;
-            font-weight: 600;
-            background: #f9f9f9;
-        }
-
-        h4 {
-            margin-top: 20px;
-            margin-bottom: 10px;
-            color: #444;
-            font-size: 15px;
-            font-weight: 600;
-        }
-    </style>
-    <div id="footer-container"></div>
-    <script>document.write('<script src="common.js?v='+Date.now()+'"><\/script>');</script>
+    <script src="../footer.js"></script>
 </body>
 </html>

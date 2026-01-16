@@ -2,270 +2,82 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Importing Files - Logos InkPen Help</title>
     <meta name="description" content="Guide to importing SVG, PDF, and image files">
     <meta name="keywords" content="import, SVG, PDF, PNG, JPEG, AI, EPS">
-    <link data-cache-bust="style.css" rel="stylesheet" type="text/css">
-    <link data-cache-bust="../footer.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&display=swap" rel="stylesheet">
     <script>document.write('<script src="../version.js?v='+Date.now()+'"><\/script>');</script>
 </head>
 <body>
-    <div class="content">
+    <script src="../banner.js"></script>
+    <div class="banner">
         <h1>Importing Files</h1>
+    </div>
 
-        <p>Logos InkPen can import various vector and raster formats, preserving editability whenever possible.</p>
+    <div class="content">
+        <p>Logos InkPen can import various vector and raster formats.</p>
 
         <h2>Import Methods</h2>
-
-        <h3>File Menu Import</h3>
-        <ol class="step-list">
-            <li>Choose <strong>File > Import</strong> (⌘I)</li>
-            <li>Select file(s) to import</li>
-            <li>Click Open to import into current document</li>
-            <li>Imported content appears on active layer</li>
-        </ol>
-
-        <h3>Drag and Drop</h3>
         <ul>
-            <li>Drag files from Finder onto canvas</li>
-            <li>Drop position determines placement</li>
-            <li>Multiple files import as separate objects</li>
-            <li>Hold Option while dropping to link (not embed)</li>
-        </ul>
-
-        <h3>Paste from Clipboard</h3>
-        <ul>
-            <li>Copy vector art from other applications</li>
-            <li>Paste with ⌘V into InkPen</li>
-            <li>Maintains vector properties when possible</li>
-            <li>Images paste as embedded bitmaps</li>
+            <li><strong>File > Import (⌘I):</strong> Select files to import</li>
+            <li><strong>Drag and Drop:</strong> Drag from Finder onto canvas</li>
+            <li><strong>Paste (⌘V):</strong> From clipboard</li>
         </ul>
 
         <h2>Vector Formats</h2>
 
         <h3>SVG Import</h3>
-        <p><strong>Scalable Vector Graphics - Best compatibility</strong></p>
-
-        <h4>Supported SVG Features</h4>
+        <p>Best compatibility for vector graphics.</p>
         <ul>
-            <li>Basic shapes (rect, circle, ellipse, polygon)</li>
-            <li>Paths with bezier curves</li>
-            <li>Groups and nested structure</li>
-            <li>Solid fills and strokes</li>
-            <li>Linear and radial gradients</li>
-            <li>Opacity and blend modes</li>
+            <li>Paths, shapes, and groups</li>
+            <li>Gradients and opacity</li>
             <li>Text (converted to outlines)</li>
-            <li>Clipping paths</li>
-            <li>Transforms (translate, rotate, scale)</li>
-        </ul>
-
-        <h4>SVG Limitations</h4>
-        <ul>
-            <li>Filters may be rasterized</li>
-            <li>Animations are ignored</li>
-            <li>JavaScript is not executed</li>
-            <li>External references must be embedded</li>
-            <li>Pattern fills converted to solid</li>
+            <li>Transforms preserved</li>
         </ul>
 
         <h3>PDF Import</h3>
-        <p><strong>Portable Document Format - Print-ready artwork</strong></p>
-
-        <h4>PDF Import Options</h4>
-        <ul>
-            <li><strong>Page Selection:</strong> Choose which page to import</li>
-            <li><strong>Crop to:</strong> Media box, crop box, or art box</li>
-            <li><strong>Scale:</strong> Import at 100% or fit to page</li>
-            <li><strong>Flatten Transparency:</strong> For complex effects</li>
-        </ul>
-
-        <h4>PDF Conversion</h4>
+        <p>Print-ready artwork.</p>
         <ul>
             <li>Vector paths remain editable</li>
-            <li>Text converted to outlines</li>
-            <li>Gradients preserved when possible</li>
-            <li>Spot colors converted to CMYK</li>
-            <li>Images embedded as bitmaps</li>
-            <li>Complex effects may be rasterized</li>
+            <li>Choose page to import</li>
+            <li>Crop box options</li>
         </ul>
 
-        <h3>Adobe Illustrator (.ai)</h3>
-        <p><strong>Native Illustrator format (PDF-compatible)</strong></p>
+        <h3>AI/EPS Import</h3>
+        <p>Adobe formats (limited support).</p>
         <ul>
-            <li>Imports as PDF if saved with compatibility</li>
-            <li>Preserves basic vector properties</li>
-            <li>Layers may be flattened</li>
-            <li>Effects and filters not supported</li>
-            <li>Best to export as SVG from Illustrator first</li>
+            <li>Basic path support</li>
+            <li>Best to export as SVG first</li>
         </ul>
 
-        <h3>EPS Import</h3>
-        <p><strong>Encapsulated PostScript - Legacy format</strong></p>
+        <h2>Image Formats</h2>
         <ul>
-            <li>Basic path support only</li>
-            <li>May require conversion</li>
-            <li>Limited color space support</li>
-            <li>Text converted to paths</li>
-        </ul>
-
-        <h2>Raster Image Formats</h2>
-
-        <h3>PNG Import</h3>
-        <p><strong>Best for images with transparency</strong></p>
-        <ul>
-            <li>Full alpha channel support</li>
-            <li>Lossless compression</li>
-            <li>Good for logos and icons</li>
-            <li>Larger file sizes than JPEG</li>
-            <li>Can be traced to vectors</li>
-        </ul>
-
-        <h3>JPEG Import</h3>
-        <p><strong>Best for photographs</strong></p>
-        <ul>
-            <li>Compressed file size</li>
-            <li>No transparency support</li>
-            <li>Good for backgrounds</li>
-            <li>Quality loss with compression</li>
-            <li>RGB color only</li>
-        </ul>
-
-        <h3>TIFF Import</h3>
-        <p><strong>Professional print images</strong></p>
-        <ul>
-            <li>Lossless compression options</li>
-            <li>CMYK color support</li>
-            <li>Alpha channel support</li>
-            <li>Large file sizes</li>
-            <li>Best for print workflows</li>
-        </ul>
-
-        <h3>Other Image Formats</h3>
-        <ul>
-            <li><strong>GIF:</strong> Limited colors, simple transparency</li>
-            <li><strong>BMP:</strong> Uncompressed, Windows bitmap</li>
-            <li><strong>WebP:</strong> Modern web format</li>
-            <li><strong>HEIC:</strong> Apple photo format</li>
+            <li><strong>PNG:</strong> Transparency support</li>
+            <li><strong>JPEG:</strong> Photographs</li>
+            <li><strong>TIFF:</strong> Print quality</li>
+            <li><strong>GIF/WebP/HEIC:</strong> Also supported</li>
         </ul>
 
         <h2>Import Settings</h2>
-
-        <h3>Image Handling</h3>
         <ul>
-            <li><strong>Embed:</strong> Include image data in document</li>
-            <li><strong>Link:</strong> Reference external file</li>
-            <li><strong>Downsample:</strong> Reduce resolution for smaller files</li>
-            <li><strong>Color Profile:</strong> Convert to document profile</li>
+            <li><strong>Embed vs Link:</strong> Include data or reference file</li>
+            <li><strong>Scale:</strong> Original, fit to page, or custom</li>
+            <li><strong>Placement:</strong> Center, original position, or cursor</li>
         </ul>
 
-        <h3>Scaling Options</h3>
+        <h2>Troubleshooting</h2>
         <ul>
-            <li><strong>Original Size:</strong> Import at 100%</li>
-            <li><strong>Fit to Page:</strong> Scale to page bounds</li>
-            <li><strong>Custom Scale:</strong> Enter percentage</li>
-            <li><strong>Resolution:</strong> Set PPI for images</li>
-        </ul>
-
-        <h3>Placement</h3>
-        <ul>
-            <li><strong>Center:</strong> Place at page center</li>
-            <li><strong>Original Position:</strong> Use file's coordinates</li>
-            <li><strong>Cursor:</strong> Click to place</li>
-            <li><strong>Active Layer:</strong> Add to current layer</li>
-        </ul>
-
-        <h2>Import Troubleshooting</h2>
-
-        <h3>Common Issues</h3>
-
-        <h4>Missing Fonts</h4>
-        <ul>
-            <li>Text automatically converted to outlines</li>
-            <li>Install missing fonts before import</li>
-            <li>Or accept outline conversion</li>
-        </ul>
-
-        <h4>Color Shifts</h4>
-        <ul>
-            <li>Check color profile settings</li>
-            <li>Convert CMYK to RGB if needed</li>
-            <li>Calibrate monitor for accuracy</li>
-        </ul>
-
-        <h4>Complex Effects Lost</h4>
-        <ul>
-            <li>3D effects not supported</li>
-            <li>Mesh gradients simplified</li>
-            <li>Filters may be rasterized</li>
-            <li>Export from source as SVG</li>
-        </ul>
-
-        <h4>Large File Sizes</h4>
-        <ul>
-            <li>Downsample large images</li>
-            <li>Link instead of embed</li>
-            <li>Optimize before import</li>
-            <li>Use appropriate format</li>
-        </ul>
-
-        <h2>Best Practices</h2>
-
-        <h3>Preparing Files for Import</h3>
-        <ol>
-            <li>Convert text to outlines in source</li>
-            <li>Expand complex effects</li>
-            <li>Embed linked images</li>
-            <li>Use RGB color space</li>
-            <li>Save as SVG when possible</li>
-        </ol>
-
-        <h3>Organizing Imports</h3>
-        <ul>
-            <li>Create dedicated layer for imports</li>
-            <li>Group related imported objects</li>
-            <li>Name layers descriptively</li>
-            <li>Lock reference layers</li>
-            <li>Delete unused imports</li>
-        </ul>
-
-        <h3>Image Optimization</h3>
-        <ul>
-            <li><strong>Resolution:</strong> 72 PPI for web, 300 PPI for print</li>
-            <li><strong>Size:</strong> No larger than needed</li>
-            <li><strong>Format:</strong> PNG for graphics, JPEG for photos</li>
-            <li><strong>Compression:</strong> Balance quality vs file size</li>
-        </ul>
-
-        <h2>Advanced Import Features</h2>
-
-        <h3>Batch Import</h3>
-        <ul>
-            <li>Select multiple files in import dialog</li>
-            <li>Each imports as separate object</li>
-            <li>Automatically distributed on canvas</li>
-            <li>Can import entire folders</li>
-        </ul>
-
-        <h3>Import as Template</h3>
-        <ul>
-            <li>Places on locked template layer</li>
-            <li>Dimmed for tracing reference</li>
-            <li>Won't export with artwork</li>
-            <li>Perfect for sketches</li>
-        </ul>
-
-        <h3>Smart Objects</h3>
-        <ul>
-            <li>Link to external file</li>
-            <li>Updates when source changes</li>
-            <li>Reduces document size</li>
-            <li>Edit in original application</li>
+            <li><strong>Missing fonts:</strong> Text converted to outlines</li>
+            <li><strong>Color shifts:</strong> Check color profiles</li>
+            <li><strong>Complex effects:</strong> May be rasterized</li>
         </ul>
 
         <p><a href="export.html">Next: Exporting Your Work →</a></p>
         <p><a href="index.html">← Back to Help Topics</a></p>
     </div>
-    <div id="footer-container"></div>
-    <script>document.write('<script src="common.js?v='+Date.now()+'"><\/script>');</script>
+
+    <script src="../footer.js"></script>
 </body>
 </html>

@@ -28,7 +28,8 @@
       "WebFetch(domain:github.com)",
       "WebFetch(domain:api.github.com)",
       "WebFetch(domain:raw.githubusercontent.com)",
-      "WebFetch(domain:thore.io)"
+      "WebFetch(domain:thore.io)",
+      "Bash(ls:*)"
     ],
     "deny": [],
     "ask": []
