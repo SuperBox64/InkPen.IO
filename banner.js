@@ -51,6 +51,8 @@
         position: sticky;
         top: 0;
         z-index: 1000;
+        max-width: 100vw;
+        overflow-x: hidden;
     }
     .countdown-banner-content {
         max-width: 1200px;
