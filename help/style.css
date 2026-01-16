@@ -1,5 +1,10 @@
 /* Apple Help Book Stylesheet for Logos InkPen */
 
+html {
+    overflow-x: hidden;
+    background-color: #000;
+}
+
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 13px;
