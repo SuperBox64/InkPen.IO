@@ -183,6 +183,12 @@
         }
 
         function formatDate(date) {
+            if (window.innerWidth <= 600) {
+                const month = date.getMonth() + 1;
+                const day = date.getDate();
+                const year = String(date.getFullYear()).slice(-2);
+                return `${month}.${day}.${year}`;
+            }
             const options = { year: 'numeric', month: 'short', day: 'numeric' };
             return date.toLocaleDateString('en-US', options);
         }
