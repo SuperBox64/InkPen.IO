@@ -1,0 +1,42 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#1a1a1a"/>
+
+  <!-- Gradient definition -->
+  <defs>
+    <linearGradient id="barGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7b2ff7"/>
+      <stop offset="100%" style="stop-color:#00d4ff"/>
+    </linearGradient>
+    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00d4ff"/>
+      <stop offset="100%" style="stop-color:#7b2ff7"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Bar chart visualization -->
+  <rect x="150" y="180" width="180" height="40" rx="8" fill="url(#barGradient)" opacity="0.6"/>
+  <rect x="150" y="240" width="320" height="40" rx="8" fill="url(#barGradient)" opacity="0.75"/>
+  <rect x="150" y="300" width="450" height="40" rx="8" fill="url(#barGradient)" opacity="0.9"/>
+  <rect x="150" y="360" width="280" height="40" rx="8" fill="url(#barGradient)" opacity="0.7"/>
+  <rect x="150" y="420" width="380" height="40" rx="8" fill="url(#barGradient)" opacity="0.85"/>
+
+  <!-- Stats numbers on right side -->
+  <text x="1050" y="210" font-family="system-ui, -apple-system, sans-serif" font-size="32" font-weight="700" fill="url(#textGradient)" text-anchor="end">201</text>
+  <text x="1050" y="270" font-family="system-ui, -apple-system, sans-serif" font-size="32" font-weight="700" fill="url(#textGradient)" text-anchor="end">18</text>
+  <text x="1050" y="330" font-family="system-ui, -apple-system, sans-serif" font-size="32" font-weight="700" fill="url(#textGradient)" text-anchor="end">b29</text>
+
+  <!-- Labels -->
+  <text x="1050" y="380" font-family="system-ui, -apple-system, sans-serif" font-size="18" fill="#666" text-anchor="end">TOTAL DOWNLOADS</text>
+  <text x="1050" y="410" font-family="system-ui, -apple-system, sans-serif" font-size="18" fill="#666" text-anchor="end">TOTAL BUILDS</text>
+  <text x="1050" y="440" font-family="system-ui, -apple-system, sans-serif" font-size="18" fill="#666" text-anchor="end">LATEST BUILD</text>
+
+  <!-- Title -->
+  <text x="600" y="100" font-family="system-ui, -apple-system, sans-serif" font-size="48" font-weight="200" fill="#ffffff" text-anchor="middle">Logos InkPen Download Stats</text>
+
+  <!-- Subtitle -->
+  <text x="600" y="550" font-family="system-ui, -apple-system, sans-serif" font-size="24" fill="#666" text-anchor="middle">GitHub Release Statistics</text>
+
+  <!-- InkPen.IO branding -->
+  <text x="600" y="590" font-family="system-ui, -apple-system, sans-serif" font-size="20" fill="#999" text-anchor="middle">inkpen.io</text>
+</svg>
