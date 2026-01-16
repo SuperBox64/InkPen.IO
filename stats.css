@@ -81,11 +81,11 @@ body {
     background: #f8f8f8;
     border-radius: 20px;
     padding: 20px 30px 10px 30px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .downloads-section {
-    padding-bottom: 15px;
+    padding-bottom: 20px;
 }
 
 .releases-section h2 {
@@ -132,6 +132,7 @@ body {
 
 .release-table tr:hover td {
     background: #f0f0f0;
+    mix-blend-mode: multiply;
 }
 
 .build-name {
@@ -153,11 +154,12 @@ body {
 
 .download-count {
     font-weight: 700;
-    color: #7b2ff7;
+    color: #5e9eff;
     font-family: 'Orbitron', sans-serif;
     min-width: 150px;
     max-width: 150px;
     width: 150px;
+    mix-blend-mode: multiply;
 }
 
 .file-size {
@@ -259,10 +261,11 @@ body {
 .bar-label {
     width: 60px;
     font-size: 0.85rem;
+    font-weight: 600;
 }
 
 .bar-label a {
-    color: #333;
+    color: #1a1a1a;
     text-decoration: none;
 }
 
@@ -294,7 +297,9 @@ body {
     transform: translateY(-50%);
     font-size: 0.8rem;
     font-weight: 700;
-    color: #333;
+    color: #5e9eff;
+    font-family: 'Orbitron', sans-serif;
+    mix-blend-mode: multiply;
 }
 
 @media (max-width: 1200px) {
@@ -323,5 +328,20 @@ body {
     .release-table td {
         padding: 10px 8px;
         font-size: 0.8rem;
+    }
+}
+
+/* Hide 3rd and 4th stat cards below 600px */
+@media (max-width: 599px) {
+    .stat-card:nth-child(3),
+    .stat-card:nth-child(4) {
+        display: none;
+    }
+}
+
+/* Hide 4th stat card between 675px and 900px */
+@media (min-width: 675px) and (max-width: 900px) {
+    .stat-card:nth-child(4) {
+        display: none;
     }
 }

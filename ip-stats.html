@@ -106,6 +106,10 @@
                         <div class="number">${latestRelease ? extractBuildNumber(allAssets[0]?.name) : 'N/A'}</div>
                         <div class="label">Latest Build</div>
                     </div>
+                    <div class="stat-card">
+                        <div class="number">${totalBuilds > 0 ? Math.round(totalDownloads / totalBuilds) : 0}</div>
+                        <div class="label">Avg Per Build</div>
+                    </div>
                 </div>
 
                 <div class="releases-section downloads-section">
