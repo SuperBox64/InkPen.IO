@@ -40,6 +40,7 @@ body {
     color: #666;
     font-size: 1rem;
     line-height: 1;
+    margin-top: 5px;
 }
 
 .stats-summary {
@@ -79,8 +80,12 @@ body {
 .releases-section {
     background: #f8f8f8;
     border-radius: 20px;
-    padding: 20px 30px 30px 30px;
+    padding: 20px 30px 10px 30px;
     margin-bottom: 30px;
+}
+
+.downloads-section {
+    padding-bottom: 15px;
 }
 
 .releases-section h2 {
@@ -116,7 +121,7 @@ body {
 }
 
 .release-table td {
-    padding: 14px 16px;
+    padding: 12px 14px;
     border-bottom: 1px solid #e0e0e0;
     font-size: 0.9rem;
 }
@@ -227,7 +232,7 @@ body {
     background: #fff;
     border-radius: 16px;
     padding: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 5px;
 }
 
 .bar-chart {
