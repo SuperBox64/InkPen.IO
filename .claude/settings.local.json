@@ -22,7 +22,13 @@
       "mcp__xcf-server__snippet",
       "Bash(open:*)",
       "Bash(git show:*)",
-      "mcp__xcf-server__open_doc"
+      "mcp__xcf-server__open_doc",
+      "WebSearch",
+      "WebFetch(domain:tooomm.github.io)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:api.github.com)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "WebFetch(domain:thore.io)"
     ],
     "deny": [],
     "ask": []
