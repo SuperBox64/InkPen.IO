@@ -149,6 +149,9 @@
         height: 1px;
         background-color: #fff;
     }
+    .show-mobile {
+        display: none;
+    }
     @media (max-width: 768px) {
         .countdown-timer {
             font-size: 1.3rem;
@@ -170,14 +173,9 @@
         }
     }`;
 
-    const desktopCSS = `
-    .show-mobile {
-        display: none;
-    }`;
-
     // Insert CSS
     const style = document.createElement('style');
-    style.textContent = bannerCSS + desktopCSS;
+    style.textContent = bannerCSS;
     document.head.appendChild(style);
 
     // Insert HTML at start of body
