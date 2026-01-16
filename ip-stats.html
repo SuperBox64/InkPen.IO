@@ -26,8 +26,8 @@
     <script src="banner.js"></script>
     <div class="container">
         <div class="header">
-            <h1 style="margin-bottom: 15px;">Logos InkPen Download Stats</h1>
-            <p style="margin-bottom: 25px;">Logos InkPen.IO download statistics from GitHub releases</p>
+            <h1>Logos InkPen Download Stats</h1>
+            <p>Logos InkPen.IO download statistics from GitHub releases</p>
         </div>
 
         <div id="stats-content">
@@ -149,7 +149,7 @@
                     </table>
                 </div>
 
-                <div style="text-align: center; margin-top: -20px;">
+                <div class="refresh-container">
                     <button class="refresh-btn" onclick="refreshStats()">Refresh Stats</button>
                     <div class="last-updated">Last updated: ${new Date().toLocaleString()}</div>
                 </div>
@@ -162,7 +162,7 @@
             document.getElementById('stats-content').innerHTML = `
                 <div class="error">
                     <p><strong>Error:</strong> ${message}</p>
-                    <button class="refresh-btn" onclick="refreshStats()" style="margin-top: 20px;">Try Again</button>
+                    <button class="refresh-btn" onclick="refreshStats()">Try Again</button>
                 </div>
             `;
         }

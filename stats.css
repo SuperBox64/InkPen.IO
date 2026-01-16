@@ -345,3 +345,21 @@ body {
         display: none;
     }
 }
+
+/* Inline style overrides */
+.header h1 {
+    margin-bottom: 15px;
+}
+
+.header p {
+    margin-bottom: 25px;
+}
+
+.refresh-container {
+    text-align: center;
+    margin-top: -20px;
+}
+
+.error .refresh-btn {
+    margin-top: 20px;
+}
