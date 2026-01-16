@@ -137,9 +137,16 @@
         text-transform: uppercase;
         letter-spacing: 0.15em;
         font-family: 'Orbitron', monospace;
+        position: relative;
     }
-    .banner-nav a:hover {
-        color: #fff;
+    .banner-nav a:hover::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 1px;
+        width: calc(100% - 0.15em);
+        height: 1px;
+        background-color: #fff;
     }
     @media (max-width: 768px) {
         .countdown-timer {
