@@ -1,5 +1,11 @@
 // Countdown Banner - Shared across pages
 (function() {
+    // Detect if in subdirectory
+    const inHelp = window.location.pathname.includes('/help/');
+    const homeLink = inHelp ? '../index.html' : 'index.html';
+    const docsLink = inHelp ? 'index.html' : 'help/index.html';
+    const statsLink = inHelp ? '../ip-stats.html' : 'ip-stats.html';
+
     // Insert banner HTML at start of body
     const bannerHTML = `
     <div class="countdown-banner">
@@ -26,9 +32,10 @@
             <div class="countdown-sponsor">Sponsor <a href="https://superbox64.com" target="_blank">SuperBox64.com</a> Retro Arcade Boxes</div>
         </div>
         <div class="banner-nav">
+            <a href="${homeLink}">Home</a>
             <a href="https://chat.xcf.ai" target="_blank">Chat</a>
-            <a href="help/index.html">Docs</a>
-            <a href="ip-stats.html">Stats</a>
+            <a href="${docsLink}">Docs</a>
+            <a href="${statsLink}">Stats</a>
         </div>
     </div>`;
 
@@ -119,7 +126,7 @@
         gap: 30px;
         margin-top: 4px;
         padding: 6px 0;
-        background-color: #444;
+        background-color: #666;
     }
     .banner-nav a {
         color: #fff;
