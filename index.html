@@ -507,16 +507,14 @@
             text-decoration: underline;
         }
 
-        /* Progressive image loading */
-        img.img-loading {
+        /* Progressive image loading - fade in when loaded */
+        img[data-cache-bust] {
             opacity: 0;
-            filter: blur(10px);
-            transition: opacity 0.4s ease-out, filter 0.4s ease-out;
+            transition: opacity 0.5s ease-in-out;
         }
 
-        img.img-loaded {
+        img[data-cache-bust].img-loaded {
             opacity: 1;
-            filter: blur(0);
         }
 
     </style>
