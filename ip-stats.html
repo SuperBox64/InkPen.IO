@@ -125,6 +125,23 @@
                     </div>
                 </div>
 
+                <div class="releases-section downloads-section">
+                    <h2>Top 10 Downloads</h2>
+                    <div class="chart-container">
+                        <div class="bar-chart">
+                            ${[...allAssets].sort((a, b) => b.downloads - a.downloads).slice(0, 10).map(asset => `
+                                <div class="bar-row">
+                                    <div class="bar-label"><a href="${asset.url}">${extractBuildNumber(asset.name)}</a></div>
+                                    <div class="bar-track">
+                                        <div class="bar-fill" style="width: ${(asset.downloads / maxDownloads) * 100}%"></div>
+                                        <div class="bar-value">${asset.downloads}</div>
+                                    </div>
+                                </div>
+                            `).join('')}
+                        </div>
+                    </div>
+                </div>
+
                 <div class="releases-section">
                     <h2>All Releases</h2>
                     <table class="release-table">
