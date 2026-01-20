@@ -507,6 +507,18 @@
             text-decoration: underline;
         }
 
+        /* Progressive image loading */
+        img.img-loading {
+            opacity: 0;
+            filter: blur(10px);
+            transition: opacity 0.4s ease-out, filter 0.4s ease-out;
+        }
+
+        img.img-loaded {
+            opacity: 1;
+            filter: blur(0);
+        }
+
     </style>
 </head>
 <body>
@@ -522,19 +534,19 @@
                 <div class="carousel-container">
                     <div class="carousel-wrapper" id="carouselWrapper">
                         <div class="carousel-slide active">
-                            <img data-cache-bust="slideshow/1-inkpen.png" alt="InkPen Application Interface">
+                            <img data-cache-bust="slideshow/1-inkpen.png" alt="InkPen Application Interface" fetchpriority="high">
                         </div>
                         <div class="carousel-slide">
-                            <img data-cache-bust="slideshow/2-hello.png" alt="InkPen Hello Screenshot">
+                            <img data-cache-bust="slideshow/2-hello.png" alt="InkPen Hello Screenshot" loading="lazy">
                         </div>
                         <div class="carousel-slide">
-                            <img data-cache-bust="slideshow/3-apple.png" alt="InkPen Apple Logo">
+                            <img data-cache-bust="slideshow/3-apple.png" alt="InkPen Apple Logo" loading="lazy">
                         </div>
                         <div class="carousel-slide">
-                            <img data-cache-bust="slideshow/4-atari.png" alt="InkPen Atari Logo">
+                            <img data-cache-bust="slideshow/4-atari.png" alt="InkPen Atari Logo" loading="lazy">
                         </div>
                         <div class="carousel-slide">
-                            <img data-cache-bust="slideshow/5-finder.png" alt="InkPen Finder Interface">
+                            <img data-cache-bust="slideshow/5-finder.png" alt="InkPen Finder Interface" loading="lazy">
                         </div>
                     </div>
                     <div class="carousel-dots">
@@ -573,7 +585,7 @@
 
             <div class="creator-image-container">
                 <a href="https://www.linkedin.com/in/toddbruss-ios-macos-swift-developer-software-engineer/" target="_blank">
-                    <img data-cache-bust="logos_InkPen_IO_LLC_pen_and_ink.png" alt="Todd" class="creator-image">
+                    <img data-cache-bust="logos_InkPen_IO_LLC_pen_and_ink.png" alt="Todd" class="creator-image" loading="lazy">
                 </a>
             </div>
             <div class="creator-location">
