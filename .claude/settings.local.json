@@ -30,7 +30,10 @@
       "WebFetch(domain:raw.githubusercontent.com)",
       "WebFetch(domain:thore.io)",
       "Bash(ls:*)",
-      "Bash(find:*)"
+      "Bash(find:*)",
+      "Bash(file:*)",
+      "Bash(cwebp:*)",
+      "Bash(git restore:*)"
     ],
     "deny": [],
     "ask": []
