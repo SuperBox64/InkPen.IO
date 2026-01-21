@@ -509,8 +509,12 @@
 
         /* Progressive image loading - fade in when loaded */
         img[data-cache-bust] {
-            opacity: 0;
+            opacity: 1;
             transition: opacity 0.5s ease-in-out;
+        }
+
+        img[data-cache-bust].img-loading {
+            opacity: 0;
         }
 
         img[data-cache-bust].img-loaded {

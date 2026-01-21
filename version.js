@@ -22,8 +22,12 @@ document.addEventListener('DOMContentLoaded', function() {
         // Add async decoding for non-blocking image decode
         img.decoding = 'async';
 
+        // Start hidden for fade-in effect
+        img.classList.add('img-loading');
+
         // Fade-in when image loads
         img.onload = function() {
+            img.classList.remove('img-loading');
             img.classList.add('img-loaded');
         };
 
@@ -32,6 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Handle already-cached images
         if (img.complete && img.naturalHeight !== 0) {
+            img.classList.remove('img-loading');
             img.classList.add('img-loaded');
         }
     });
