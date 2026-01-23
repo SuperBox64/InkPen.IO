@@ -160,7 +160,7 @@
     }
     @media (max-width: 768px) {
         .countdown-timer {
-            font-size: 1.3rem;
+            font-size: 1.495rem;
         }
         .countdown-number {
             min-width: 35px;
@@ -169,7 +169,10 @@
             margin: 0 4px;
         }
         .digit {
-            width: 17px;
+            width: 19.5px;
+        }
+        .countdown-unit {
+            font-size: 0.675rem;
         }
         .countdown-sponsor {
             font-size: 0.65rem;
