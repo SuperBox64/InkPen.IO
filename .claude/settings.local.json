@@ -33,7 +33,8 @@
       "Bash(find:*)",
       "Bash(file:*)",
       "Bash(cwebp:*)",
-      "Bash(git restore:*)"
+      "Bash(git restore:*)",
+      "WebFetch(domain:www.seanmcp.com)"
     ],
     "deny": [],
     "ask": []

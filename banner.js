@@ -70,18 +70,17 @@
         text-align: center;
         width: 100%;
         font-family: 'Orbitron', monospace;
+        padding-bottom: 3px;
     }
     .countdown-timer {
         font-size: 2.468rem;
         font-weight: 900;
-        color: #ff0000;
         letter-spacing: 0.1em;
         font-family: 'Orbitron', monospace;
-        text-shadow: 0 0 10px rgba(255, 0, 0, 0.7), 0 0 20px rgba(255, 0, 0, 0.375);
         padding: 1px 4px 1px 6px;
-        background: rgba(20, 0, 0, 0.5);
+        background: rgba(20, 20, 20, 0.5);
         border-radius: 5px;
-        border: 1px solid #330000;
+        border: none;
         line-height: 1;
     }
     .countdown-segment {
@@ -91,15 +90,22 @@
     }
     .countdown-number {
         display: inline-block;
-        width: 70px;
         text-align: center;
         line-height: 1;
-        font-variant-numeric: tabular-nums;
+        background: linear-gradient(135deg, #00d4ff, #7b2ff7);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+    .digit {
+        display: inline-block;
+        width: 32.5px;
+        text-align: center;
     }
     .countdown-unit {
         font-size: 0.9rem;
         display: block;
-        color: #ff6666;
+        color: #999;
         margin: 0;
         letter-spacing: 0.05em;
         line-height: 1;
@@ -111,8 +117,8 @@
         font-weight: 400;
         letter-spacing: 0.1em;
         text-transform: uppercase;
-        color: #ccc;
-        margin-top: 4px;
+        color: #00d4ff;
+        margin-top: 1.5px;
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
     }
     .countdown-sponsor a {
@@ -193,12 +199,13 @@
             const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
             const seconds = Math.floor((difference % (1000 * 60)) / 1000);
 
-            document.getElementById('days').textContent = String(days).padStart(2, '0');
-            document.getElementById('hours').textContent = String(hours).padStart(2, '0');
-            document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
-            document.getElementById('seconds').textContent = String(seconds).padStart(2, '0');
+            const wrapDigits = (num) => String(num).padStart(2, '0').split('').map(d => `<span class="digit">${d}</span>`).join('');
+            document.getElementById('days').innerHTML = wrapDigits(days);
+            document.getElementById('hours').innerHTML = wrapDigits(hours);
+            document.getElementById('minutes').innerHTML = wrapDigits(minutes);
+            document.getElementById('seconds').innerHTML = wrapDigits(seconds);
         } else {
-            document.getElementById('countdown').innerHTML = '<span style="color: #ff0000;">RELEASED!</span>';
+            document.getElementById('countdown').innerHTML = '<span style="background: linear-gradient(135deg, #00d4ff, #7b2ff7); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">RELEASED!</span>';
         }
     }
 
