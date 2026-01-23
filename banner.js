@@ -168,6 +168,9 @@
         .countdown-segment {
             margin: 0 4px;
         }
+        .digit {
+            width: 17px;
+        }
         .countdown-sponsor {
             font-size: 0.65rem;
         }
