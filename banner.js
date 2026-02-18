@@ -10,7 +10,7 @@
     const bannerHTML = `
     <div class="countdown-banner">
         <div class="countdown-banner-content">
-            <div class="countdown-label">INKPEN <span class="hide-mobile">BETA </span>RELEASE 1.0 <span class="hide-mobile">BUILD</span><span class="show-mobile">BETA</span> 30</div>
+            <div class="countdown-label" id="countdown-label"></div>
             <div class="countdown-timer" id="countdown">
                 <span class="countdown-segment">
                     <span class="countdown-number" id="days">00</span>
@@ -37,6 +37,9 @@
             <a href="${docsLink}">Docs</a>
             <a href="${statsLink}">Stat</a>
             <a href="https://superbox64.com" target="_blank">SBOX</a>
+        </div>
+        <div class="founder-notice">
+            <span class="ribbon-icon">&#x1F397;</span> Our founder, Todd Bruss, is currently battling Cancer. Through it all, he continues to pour his heart into InkPen. Your support and encouragement mean the world. <span class="ribbon-icon">&#x1F397;</span>
         </div>
     </div>`;
 
@@ -155,6 +158,21 @@
         height: 1px;
         background-color: #fff;
     }
+    .founder-notice {
+        background: linear-gradient(135deg, #1a1a2e, #16213e);
+        color: #e0e0e0;
+        font-size: 0.8rem;
+        font-weight: 400;
+        letter-spacing: 0.02em;
+        padding: 8px 20px;
+        line-height: 1.5;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        font-style: italic;
+        border-top: 1px solid rgba(100, 100, 255, 0.2);
+    }
+    .ribbon-icon {
+        font-style: normal;
+    }
     .show-mobile {
         display: none;
     }
@@ -193,11 +211,27 @@
     // Insert HTML at start of body
     document.body.insertAdjacentHTML('afterbegin', bannerHTML);
 
-    // Countdown Timer function
+    // Read release config from global RELEASE_CONFIG (loaded via release-status.js)
+    const config = window.RELEASE_CONFIG;
+    const build = config.build;
+    const targetDate = new Date(config.targetDate);
+    const isReleased = config.released;
+
+    // Set banner label with build number
+    document.getElementById('countdown-label').innerHTML =
+        'INKPEN <span class="hide-mobile">BETA </span>RELEASE 1.0 <span class="hide-mobile">BUILD</span><span class="show-mobile">BETA</span> ' + build;
+
+    const wrapDigits = (num) => String(num).padStart(2, '0').split('').map(d => `<span class="digit">${d}</span>`).join('');
+
     function updateCountdown() {
-        const targetDate = new Date('2026-02-15T18:00:00-05:00');
         const now = new Date();
         const difference = targetDate - now;
+
+        if (isReleased && difference <= 0) {
+            // Timer expired AND release confirmed for this build
+            document.getElementById('countdown').innerHTML = '<span style="background: linear-gradient(135deg, #00d4ff, #7b2ff7); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">RELEASED!</span>';
+            return;
+        }
 
         if (difference > 0) {
             const days = Math.floor(difference / (1000 * 60 * 60 * 24));
@@ -205,17 +239,19 @@
             const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
             const seconds = Math.floor((difference % (1000 * 60)) / 1000);
 
-            const wrapDigits = (num) => String(num).padStart(2, '0').split('').map(d => `<span class="digit">${d}</span>`).join('');
             document.getElementById('days').innerHTML = wrapDigits(days);
             document.getElementById('hours').innerHTML = wrapDigits(hours);
             document.getElementById('minutes').innerHTML = wrapDigits(minutes);
             document.getElementById('seconds').innerHTML = wrapDigits(seconds);
         } else {
-            document.getElementById('countdown').innerHTML = '<span style="background: linear-gradient(135deg, #00d4ff, #7b2ff7); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">RELEASED!</span>';
+            // Timer expired but not yet marked as released — show zeros
+            document.getElementById('days').innerHTML = wrapDigits(0);
+            document.getElementById('hours').innerHTML = wrapDigits(0);
+            document.getElementById('minutes').innerHTML = wrapDigits(0);
+            document.getElementById('seconds').innerHTML = wrapDigits(0);
         }
     }
 
-    // Start countdown
     updateCountdown();
     setInterval(updateCountdown, 1000);
 })();
