@@ -201,6 +201,11 @@
         .show-mobile {
             display: inline;
         }
+        .founder-notice {
+            font-size: clamp(0.6rem, 2.5vw, 0.8rem);
+            padding: 6px 12px;
+            line-height: 1.4;
+        }
     }`;
 
     // Insert CSS
